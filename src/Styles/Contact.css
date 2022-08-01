@@ -1,0 +1,365 @@
+/* ******************** Section One Starts from Here ******************** */
+
+.contact .section1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 5rem;
+}
+
+.section1 h1 {
+  font-size: 8rem;
+  font-weight: 900;
+  letter-spacing: 0.5ch;
+  background: -webkit-linear-gradient(#03254c, #2a9df4);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section1 img {
+  display: none;
+  width: 35rem;
+}
+
+/* ******************** Section Two Starts from Here ******************** */
+
+.contact .section2 {
+  padding: 5rem;
+  background-color: var(--black-color);
+  color: var(--yellow-color);
+}
+
+.section2 .title {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section2 .timing {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.section2 .timing span {
+  margin-left: 2rem;
+}
+
+.section2 .section2-subsection {
+  display: grid;
+  grid-template-columns: 60% 30%;
+  align-items: center;
+}
+
+.subsection-left-side ul li,
+.subsection-right-side ul li {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 0;
+  cursor: pointer;
+}
+
+.subsection-left-side ul li span,
+.subsection-right-side ul li span {
+  margin-left: 2.2rem;
+}
+
+.subsection-left-side ul li span:hover,
+.subsection-right-side ul li span:hover {
+  margin-left: 2.8rem;
+}
+
+/* ******************** Section Three Starts from Here ******************** */
+
+.section3 {
+  padding: 5rem;
+  background-color: var(--silk-color);
+}
+
+.section3 .offices-title {
+  text-align: center;
+  margin-bottom: 5rem;
+  color: var(--yellow-color);
+  font-size: 4rem;
+}
+
+.section3-sub {
+  position: relative;
+  max-width: 35rem;
+  min-height: 25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  box-shadow: var(--box-shadow);
+}
+
+.section3-sub .title-china {
+  font-size: 5rem;
+  letter-spacing: 0.5ch;
+  color: var(--black-color);
+}
+
+.section3-sub-overlay {
+  position: absolute;
+  bottom: 100%;
+  background-color: var(--black-color);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 1s ease-in-out;
+  border-radius: 0.5rem;
+}
+
+.section3-sub:hover .section3-sub-overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.section3-sub-text {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.section3-sub ul .section3-sub-li {
+  width: 35rem;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.section3-sub ul .section3-sub-li span {
+  margin-left: 2rem;
+}
+
+/* ******************** Section Four Starts from Here ******************** */
+
+.section4 {
+  padding: 5rem;
+  background-color: #fff;
+}
+
+.section4 .title-pakistan,
+.section5 h2 {
+  font-size: 5rem;
+  letter-spacing: 0.5ch;
+  color: var(--black-color);
+  text-align: center;
+}
+
+.card-container {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr 1fr;
+
+  grid-template-rows: auto;
+  align-items: center;
+  justify-items: center;
+  cursor: pointer;
+}
+
+.card .icon {
+  position: absolute;
+
+  top: 0;
+
+  left: 0;
+
+  width: 100%;
+
+  height: 100%;
+
+  background: #3ab4f2;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+.card .icon .card-title {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+}
+
+.card .slide {
+  width: 18.75rem;
+
+  height: 12.5rem;
+
+  transition: 0.5s;
+}
+
+.card .slide.slide1 {
+  position: relative;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  z-index: 1;
+
+  transition: 0.7s;
+
+  transform: translateY(100px);
+}
+
+.card:hover .slide.slide1 {
+  transform: translateY(0px);
+}
+
+.card .slide.slide2 {
+  position: relative;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  padding: 1.25rem;
+
+  box-sizing: border-box;
+
+  transition: 0.8s;
+
+  transform: translateY(-100px);
+
+  box-shadow: var(--box-shadow);
+}
+
+.card:hover .slide.slide2 {
+  transform: translateY(0);
+}
+
+.card .slide.slide2::after {
+  content: "";
+
+  position: absolute;
+
+  width: 1.875rem;
+
+  height: 0.25rem;
+
+  bottom: 0.938rem;
+
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  background: var(--black-color);
+}
+
+.contact ul li {
+  display: flex;
+  align-items: center;
+  padding: 0.8rem 0;
+}
+
+.content ul li span {
+  margin-left: 0.5rem;
+}
+
+/* ******************** Section Five Starts from Here ******************** */
+
+.section5 {
+  padding: 5rem;
+  background-color: var(--silk-color);
+}
+
+.section5 .section5-title {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2rem;
+  cursor: pointer;
+}
+
+.box {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 22rem;
+  width: 30rem;
+  border-radius: 0.5rem;
+  box-shadow: var(--box-shadow);
+  transition: all 0.5s ease;
+}
+
+.box:nth-child(1) {
+  background-image: url("../images/faisalabad.jpg");
+}
+
+.box:nth-child(2) {
+  background-image: url("../images/badshahi.jpg");
+}
+
+.box:nth-child(3) {
+  background-image: url("../images/mazar.jpg");
+}
+
+.box:nth-child(4) {
+  background-image: url("../images/faisal-mosque-faisal.jpg");
+}
+
+.box-hover {
+  height: 22rem;
+  width: 30rem;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  backdrop-filter: blur(5px);
+  background-color: rgb(0, 0, 0, 0.5);
+  transition: all 0.5s ease;
+}
+
+.box-hover1{
+  transform: translatey(-1000%);
+}
+.box-hover2{
+  transform: translateX(1000%);
+}
+.box-hover3{
+  transform: translateX(-1000%);
+}
+.box-hover4{
+  transform: translateX(1000%);
+}
+
+
+
+.box:hover .box-hover {
+  transform: translateX(0%);
+  display: block;
+  color: var(--yellow-color);
+  font-weight: 700;
+}
+
+.box ul li {
+  display: flex;
+  align-items: center;
+}
+
+.box ul li span {
+  margin-left: 2rem;
+}
+
+.box .box-title {
+  text-align: center;
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}

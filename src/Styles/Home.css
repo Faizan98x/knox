@@ -1,0 +1,7 @@
+.home {
+    min-height: 92vh;
+    background-color: var(--silk-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
