@@ -1,4 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Roboto:wght@400;500;700&display=swap");
+/* ******************** Google Fonts Link ******************** */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Playfair+Display:ital,wght@1,500;1,700&family=Saira+Stencil+One&display=swap');
+
 
 /* ******************** Global Settings ******************** */
 
@@ -7,9 +9,10 @@
   --yellow-color: #f0a500;
   --orange-color: #e45826;
   --silk-color: #e6d5b8;
-  --box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
-  --primary-family: "Roboto", sans-serif;
+  --box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+  --primary-family: "Lato", sans-serif;
   --secondary-family: "Playfair Display", serif;
+  --style-family: "Saira Stencil One", cursive;
 }
 
 * {
@@ -18,9 +21,6 @@
   box-sizing: border-box;
   outline: none;
   border: none;
-  text-decoration: none;
-  list-style: none;
-  transition: 0.2s linear;
 }
 
 html {
@@ -37,15 +37,54 @@ body {
   flex-direction: column;
   overflow-x: hidden;
   font-family: var(--primary-family);
-  font-size: 1.4rem;
-  font-weight: 400;
 }
+
+a {
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+li {
+  font-size: 1.6rem;
+  list-style: none;
+}
+
+h1 {
+  font-size: 7.2rem;
+}
+
+h2 {
+  font-size: 6rem;
+}
+
+h3 {
+  font-size: 5.2rem;
+}
+
+h4 {
+  font-size: 4.5rem;
+}
+
+h5 {
+  font-size: 3.6rem;
+}
+
+h6 {
+  font-size: 3.2rem;
+}
+
+p {
+  font-size: 2rem;
+}
+
+
 
 /* ******************** Media Queries ******************** */
 
 @media screen and (min-width: 750px) {
   .menubars {
     display: none;
+    color: #1b1a17;
   }
 }
 
@@ -79,7 +118,6 @@ body {
   }
 
   .navbar .navlinks a:hover {
-    background-color: orangered;
     font-weight: bold;
   }
 

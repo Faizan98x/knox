@@ -14,7 +14,10 @@ function Navbar() {
       <Link to="/">
         <img className="logo" src={logo} alt="Knox Logo" />
       </Link>
-      <div className={click ? "navlinks" : "navlinks active"}>
+      <div
+        className={click ? "navlinks active" : "navlinks"}
+        onClick={handleclick}
+      >
         <NavLink to="/">HOME</NavLink>
         <NavLink to="/about">ABOUT</NavLink>
         <NavLink to="/products">PRODUCTS</NavLink>
@@ -23,9 +26,9 @@ function Navbar() {
       </div>
       <div className="menubars">
         {click ? (
-          <FaBars onClick={handleclick} size="2rem" color="#fff" />
+          <FaTimes onClick={handleclick} size="2rem" color="#000" />
         ) : (
-          <FaTimes onClick={handleclick} size="2rem" color="#fff" />
+          <FaBars onClick={handleclick} size="2rem" color="#000" />
         )}
       </div>
     </div>

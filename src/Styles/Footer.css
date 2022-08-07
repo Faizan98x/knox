@@ -1,18 +1,17 @@
 .footer {
-  background: var(--yellow-color);
+  background: #3e3e3e;
   padding: 2rem 0;
 }
 
-.footer h1 {
+.footer p {
   text-transform: capitalize;
-  font-size: 1.2rem;
   text-align: center;
   padding: 1.5rem;
   padding-top: 2.5rem;
   margin-top: 2rem;
-  color: var(--black-color);
+  color: white;
 }
 
-.footer h1 img{
-    width: 80px;
+.footer p img{
+    width: 130px;
 }

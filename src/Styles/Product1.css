@@ -1,0 +1,41 @@
+.product1 {
+  padding: 5rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product1-left-side,
+.product1-right-side {
+  flex: 1 1 400px;
+}
+
+.product1-right-side {
+  flex: 1 1 150px;
+  padding: 0 5rem;
+}
+
+.product1-right-side p {
+  margin-bottom: 2rem;
+  color: #717171;
+  text-align: justify;
+}
+
+.product1-right-side ul li {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 0;
+}
+
+.product1-right-side ul li span {
+  margin-left: 2rem;
+}
+
+.product1-details {
+  padding: clamp(5rem, 10%, 10rem) clamp(5rem, 10%, 20rem);
+}
+
+.product1-details p {
+  text-align: justify;
+  margin-bottom: 5rem;
+}

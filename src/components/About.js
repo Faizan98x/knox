@@ -38,8 +38,8 @@ function About() {
       {/* ******************** Section Three Starts from Here ******************** */}
 
       <div className="about-section3">
-        <img src={worker} alt="" />
-        <div className="about-section3-text-area">
+        <img data-aos="fade-right" src={worker} alt="" />
+        <div data-aos="fade-left" className="about-section3-text-area">
           <h1>Knox makes things easy</h1>
           <p>
             Solplanet products are easy-to-install, reliable and user-friendly.
@@ -54,7 +54,7 @@ function About() {
       {/* ******************** Section Four Starts from Here ******************** */}
 
       <div className="about-section3">
-        <div className="about-section3-text-area">
+        <div data-aos="fade-right" className="about-section3-text-area">
           <h1>
             The future is <br /> solar for everybody
           </h1>
@@ -63,7 +63,7 @@ function About() {
             everybody and at Knox we are working hard to make that happen.
           </p>
         </div>
-        <img src={man} alt="" />
+        <img data-aos="fade-left" src={man} alt="" />
       </div>
 
 

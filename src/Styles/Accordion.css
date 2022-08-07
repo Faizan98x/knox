@@ -1,0 +1,30 @@
+.accordionsection {
+  padding: 5rem;
+}
+
+.wrap {
+  box-shadow: 2px 10px 35px 1px rgba(153, 153, 153, 0.3);
+  background: #272727;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 3rem;
+  cursor: pointer;
+}
+
+.wrap h1 {
+  font-size: 2rem;
+}
+
+.dropdown {
+  background: #fff;
+  color: #1c1c1c;
+  width: 100%;
+  padding: 3rem 2rem;
+  border-bottom: 1px solid #1c1c1c;
+  border-top: 1px solid #1c1c1c;
+  line-height: 1.9;
+}
+

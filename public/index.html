@@ -3,6 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+
+    <!-- aos animation css link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
@@ -10,9 +14,19 @@
       content="Web site created using create-react-app"
     />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <title>Knox</title>
+    <title>Knox || Powering Generations</title>
   </head>
   <body>
     <div id="root"></div>
+
+    <!-- aos javascript link -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 200,
+        duration: 1000,
+        easing: "ease-in-out",
+      });
+    </script>
   </body>
 </html>

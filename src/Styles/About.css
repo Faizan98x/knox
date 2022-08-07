@@ -33,13 +33,15 @@
 }
 
 .about-section2 h1 {
-  margin: 2rem 0;
+  margin: 3rem 0;
+  font-size: 4.5rem;
 }
 
 .about-section2 p {
   line-height: 2.5;
   text-align: justify;
   color: #73777b;
+  font-size: 1.8rem;
 }
 
 /* ******************** Section Three Starts from Here ******************** */
@@ -65,5 +67,5 @@
 }
 
 .about-section3 img {
-  width: 39.5rem;
+  width: 63.1rem;
 }
