@@ -1,0 +1,46 @@
+.videoslider {
+    position: relative;
+  }
+  
+  .video {
+    width: 960px;
+    height: 360px;
+  }
+
+  .video poster{
+    background: green;
+  }
+  
+  .vright-arrow {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    font-size: 3rem;
+    color: #000;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .vleft-arrow {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    font-size: 3rem;
+    color: #000;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .vslide {
+    opacity: 0;
+    transition-duration: 1s ease;
+  }
+  
+  .vslide.active {
+    opacity: 1;
+    transition-duration: 1s;
+    transform: scale(1.08);
+  }
+  

@@ -4,6 +4,11 @@
 
 /* ******************** Global Settings ******************** */
 
+
+::-webkit-scrollbar{
+  display: none;
+}
+
 :root {
   --black-color: #1b1a17;
   --yellow-color: #f0a500;
@@ -23,11 +28,21 @@
   border: none;
 }
 
+.scroll-section{
+  min-height: 100vh;
+  padding: 8rem 0;
+  scroll-snap-align: start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 html {
   min-height: 100%;
   max-width: 100%;
   font-size: 62.5%;
   scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
 }
 
 body {
@@ -37,6 +52,14 @@ body {
   flex-direction: column;
   overflow-x: hidden;
   font-family: var(--primary-family);
+}
+
+.btn{
+  border-radius: 5rem;
+  cursor: pointer;
+  padding: 1rem;
+  transition: 0.3s;
+  text-transform: capitalize;
 }
 
 a {
@@ -70,13 +93,20 @@ h5 {
 }
 
 h6 {
-  font-size: 3.2rem;
+  font-size: 2.6rem;
 }
 
 p {
   font-size: 2rem;
 }
 
+.lighterH{
+  font-size: 1.8rem;
+}
+
+.lighterP{
+  font-size: 1.4rem;
+}
 
 
 /* ******************** Media Queries ******************** */

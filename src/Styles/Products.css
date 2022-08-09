@@ -3,7 +3,8 @@
 }
 
 .products h6 {
-  margin-block: 5rem;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
   text-transform: uppercase;
 }
 
@@ -37,10 +38,6 @@
 .btn {
   background: #313131;
   color: #fff;
-  border-radius: 5rem;
-  padding: 1rem;
-  cursor: pointer;
-  transition: 1s ease;
   margin-top: 1rem;
 }
 

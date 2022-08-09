@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import {SliderData} from "../Data/SliderData";
+import { SliderData } from "../Data/SliderData";
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
 import "../Styles/ImageSlider.css";
+import { motion } from "framer-motion";
 
 const ImageSlider = ({ slides }) => {
   const [current, setCurrent] = useState(0);
@@ -30,7 +31,12 @@ const ImageSlider = ({ slides }) => {
             key={index}
           >
             {index === current && (
-              <img src={slide.images} alt="travel " className="image" />
+              <motion.img
+                whileHover={{ scale: 1.1, transition: { duration: 1 } }}
+                src={slide.images}
+                alt="travel "
+                className="image"
+              />
             )}
           </div>
         );

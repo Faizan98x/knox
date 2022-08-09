@@ -1,3 +1,17 @@
+.product1-left-side .largerviewbtn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.show-largerviewbtn:hover .largerviewbtn{
+  opacity: 1;
+}
+
 .product1 {
   padding: 5rem 0;
   display: flex;
@@ -5,9 +19,10 @@
   justify-content: center;
 }
 
-.product1-left-side,
-.product1-right-side {
+.product1-left-side {
   flex: 1 1 400px;
+  position: relative;
+
 }
 
 .product1-right-side {

@@ -5,10 +5,17 @@ import ProductfourGray from "../images/Screenshot 121.jpg";
 import inverterasw from "../images/inverterasw.png";
 import { Link } from "react-router-dom";
 import Accordion from "../components/Accordion";
+import { motion } from "framer-motion";
 
 function Home() {
   return (
-    <div className="home">
+    <motion.div
+      className="home"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.5 }}
+    >
       {/* Home Section One Starts From Here */}
 
       <div className="Homefront">
@@ -94,6 +101,9 @@ function Home() {
             Glen Morris, of Smart Energy Lab Australia, loves a good challenge.
             He installed our Solplanet inverter blindfolded.
           </p>
+          <button style={{ marginTop: "5rem" }} className="btn">
+            View Videos
+          </button>
         </div>
       </div>
 
@@ -112,8 +122,16 @@ function Home() {
             Is this series also right for your customers? Discover more on our
             product page.
           </p>
+          <button style={{ marginTop: "2rem" }} className="btn">
+            View Products
+          </button>
         </div>
-        <img data-aos="fade-left" src={ProductfourGray} alt="" />
+        <img
+          style={{ height: "40rem" }}
+          data-aos="fade-left"
+          src={ProductfourGray}
+          alt=""
+        />
       </div>
 
       {/* Home Section Five Ends Here */}
@@ -121,12 +139,12 @@ function Home() {
       {/* Home Section Six Starts From Here*/}
 
       <div className="home-sec6">
-        <h5>Frequently asked questions?</h5>
+        <h5 data-aos="fade-down">Frequently asked questions?</h5>
         <Accordion />
       </div>
 
       {/* Home Section Six Ends Here */}
-    </div>
+    </motion.div>
   );
 }
 

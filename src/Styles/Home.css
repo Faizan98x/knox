@@ -1,5 +1,6 @@
 /* Home First Section Starts From Here */
 
+
 .Homefront {
   min-height: 100vh;
   max-width: 100%;
@@ -80,12 +81,17 @@
   transform: scale(1.1);
 }
 
+.home-sec2-part2 li:hover .btn{
+  background-color: #f1356d;
+}
+
 /* Home Section Two Ends Here  */
 
 /* Home Section Three Starts from here */
 
 .home-sec3,
 .home-sec5 {
+  background: linear-gradient(#4ca1af, #c4e0e5);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -103,6 +109,7 @@
 .home-sec3-text h3,
 .home-sec5-text h3 {
   margin-bottom: 6rem;
+  text-transform: capitalize;
 }
 
 /* Home Section Five Starts from here */

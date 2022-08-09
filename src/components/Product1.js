@@ -4,13 +4,23 @@ import ImageSlider from "./ImageSlider";
 import { SliderData } from "../Data/SliderData";
 import * as BsIcons from "react-icons/bs";
 import * as FaIcons from "react-icons/fa";
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 function Product1() {
   return (
-    <>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.5 }}
+    >
       <div className="product1">
         <div className="product1-left-side">
-          <ImageSlider slides={SliderData} />
+          <ImageSlider className="show-largerviewbtn" slides={SliderData} />
+          <Link className="largerviewbtn btn" to="/largerview">
+            View Product
+          </Link>
         </div>
         <div className="product1-right-side">
           <h6>Single Phase Inverter</h6>
@@ -94,7 +104,7 @@ function Product1() {
       </div>
 
       <div className="product1-downloads"></div>
-    </>
+    </motion.div>
   );
 }
 

@@ -7,10 +7,17 @@ import {
   BsTwitter,
 } from "react-icons/bs";
 import { RiInstagramFill, RiFacebookCircleFill } from "react-icons/ri";
+import { motion } from "framer-motion";
 
 function Contact() {
   return (
-    <div className="contact">
+    <motion.div
+      className="contact"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.5 }}
+    >
       {/* ******************** Section One Starts from Here ******************** */}
 
       <div className="section1">
@@ -372,7 +379,7 @@ function Contact() {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

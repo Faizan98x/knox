@@ -5,11 +5,8 @@ import logo from "../images/logo.png";
 function Footer() {
   return (
     <div className="footer">
-      <p>
-        {" "}
-        all rights reserved <br /> <br /> <img src={logo} alt="" /> Powering
-        Generations{" "}
-      </p>
+      <span>Copyright &#169; 2022</span>
+      <img src={logo} alt="" />
     </div>
   );
 }
