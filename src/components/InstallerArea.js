@@ -324,7 +324,7 @@ function InstallerArea() {
                   display: "flex",
                   alignItems: "center",
                 }}
-                target="_blank"
+                target="_blank" rel="noreferrer noopener"
                 href={pdffile}
               >
                 <RiArrowRightSLine /> Product Brochures
@@ -340,7 +340,7 @@ function InstallerArea() {
                   display: "flex",
                   alignItems: "center",
                 }}
-                target="_blank"
+                target="_blank" rel="noreferrer noopener"
                 href={pdffile}
               >
                 <RiArrowRightSLine /> Hybrid Inverter
@@ -356,7 +356,7 @@ function InstallerArea() {
                   display: "flex",
                   alignItems: "center",
                 }}
-                target="_blank"
+                target="_blank" rel="noreferrer noopener"
                 href={pdffile}
               >
                 <RiArrowRightSLine /> Single Inverter
@@ -372,7 +372,7 @@ function InstallerArea() {
                   display: "flex",
                   alignItems: "center",
                 }}
-                target="_blank"
+                target="_blank" rel="noreferrer noopener"
                 href={pdffile}
               >
                 Three Inverter

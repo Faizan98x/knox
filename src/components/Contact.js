@@ -64,8 +64,8 @@ function Contact() {
                 <span>
                   <a
                     style={{ color: "#f0a500", fontSize: "1.6rem" }}
-                    target="_blank"
                     href="https://www.facebook.com/KnoxStringInverter/"
+                    target="_blank" rel="noreferrer noopener"
                   >
                     @KnoxStringInverter
                   </a>
