@@ -1,5 +1,5 @@
 .about {
-  background: linear-gradient( #fff, #03254c, #03254c, #03254c);
+  background: linear-gradient(#fff, #03254c, #03254c, #03254c);
 }
 
 /* ******************** Section One Starts from Here ******************** */
@@ -8,6 +8,7 @@
   margin-inline: clamp(1.5rem, 10vw, 30rem);
   margin-block: clamp(3rem, 10vh, 5rem);
 } */
+
 
 .about-section1 h1 {
   font-size: clamp(3rem, 10vw, 20rem);
@@ -27,7 +28,7 @@
 
 .about-section2 h1 {
   font-size: 4.5rem;
-  /* transform: rotateZ(-90deg); */
+  color: #fff;
   text-align: center;
   margin-bottom: 2rem;
 }
@@ -51,6 +52,7 @@
 }
 
 .about-section3-text-area h1 {
+  color: #fff;
   margin-bottom: 2rem;
 }
 

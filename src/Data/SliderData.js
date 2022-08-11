@@ -4,15 +4,15 @@ import ASW3000SBottomBlue from "../images/ASW3000-S-3680-S-4000-S-5000-S_-bottom
 
 export const SliderData = [
   {
-    id: 1,
+    id: 5,
     images: ASW3000SFrontBlue,
   },
   {
-    id: 2,
+    id: 6,
     images: ASW3000SsideBlue,
   },
   {
-    id: 3,
+    id: 7,
     images: ASW3000SBottomBlue,
   },
 ];

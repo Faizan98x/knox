@@ -20,14 +20,14 @@ function Contact() {
     >
       {/* ******************** Section One Starts from Here ******************** */}
 
-      <div className="section1">
+      {/* <div className="section1">
         <h1>CONTACT US</h1>
-      </div>
+      </div> */}
 
       {/* ******************** Section Two Starts from Here ******************** */}
 
       <div className="section2">
-        <h3 className="title">Contact Info</h3>
+        <h3 className="title">CONTACT INFO</h3>
 
         <div className="section2-subsection">
           <div className="subsection-left-side">
@@ -61,7 +61,15 @@ function Contact() {
 
               <li>
                 <RiFacebookCircleFill size="2.5rem" color="#F0A500" />
-                <span>@facebook.com</span>{" "}
+                <span>
+                  <a
+                    style={{ color: "#f0a500", fontSize: "1.6rem" }}
+                    target="_blank"
+                    href="https://www.facebook.com/KnoxStringInverter/"
+                  >
+                    @KnoxStringInverter
+                  </a>
+                </span>{" "}
               </li>
 
               <li>
@@ -121,14 +129,14 @@ function Contact() {
         <div className="contact-sec4-cards">
           {/* ****Card One**** */}
 
-          <div class="contact-sec4-card">
-            <div class="contact-sec4-slide contact-sec4-slide1">
-              <div class="contact-sec4-content contact-sec4-content1">
-                <h3 class="contact-sec4-card-title">ISLAMABAD</h3>
+          <div className="contact-sec4-card">
+            <div className="contact-sec4-slide contact-sec4-slide1">
+              <div className="contact-sec4-content contact-sec4-content1">
+                <h3 className="contact-sec4-card-title">ISLAMABAD</h3>
               </div>
             </div>
-            <div class="contact-sec4-slide contact-sec4-slide2">
-              <div class="contact-sec4-content">
+            <div className="contact-sec4-slide contact-sec4-slide2">
+              <div className="contact-sec4-content">
                 <ul>
                   <li>
                     <MdLocationOn size="2.5rem" color="#F0A500" />
@@ -148,21 +156,18 @@ function Contact() {
 
           {/* ****Card Two**** */}
 
-          <div class="contact-sec4-card">
-            <div class="contact-sec4-slide contact-sec4-slide1">
-              <div class="contact-sec4-content contact-sec4-content1">
-                <h3 class="contact-sec4-card-title">ISLAMABAD</h3>
+          <div className="contact-sec4-card">
+            <div className="contact-sec4-slide contact-sec4-slide1">
+              <div className="contact-sec4-content contact-sec4-content1">
+                <h3 className="contact-sec4-card-title">LAHORE</h3>
               </div>
             </div>
-            <div class="contact-sec4-slide contact-sec4-slide2">
-              <div class="contact-sec4-content">
+            <div className="contact-sec4-slide contact-sec4-slide2">
+              <div className="contact-sec4-content">
                 <ul>
                   <li>
                     <MdLocationOn size="2.5rem" color="#F0A500" />
-                    <span>
-                      Plot no 21, street no 4 <br /> steel fabrication Market,{" "}
-                      <br /> I-10 Islamabad
-                    </span>
+                    <span>293-D Faisal town, Lahore</span>
                   </li>
                   <li>
                     <BsFillTelephoneFill size="2.5rem" color="#F0A500" />
@@ -175,20 +180,19 @@ function Contact() {
 
           {/* ****Card Three**** */}
 
-          <div class="contact-sec4-card">
-            <div class="contact-sec4-slide contact-sec4-slide1">
-              <div class="contact-sec4-content contact-sec4-content1">
-                <h3 class="contact-sec4-card-title">ISLAMABAD</h3>
+          <div className="contact-sec4-card">
+            <div className="contact-sec4-slide contact-sec4-slide1">
+              <div className="contact-sec4-content contact-sec4-content1">
+                <h3 className="contact-sec4-card-title">FAISALABAD</h3>
               </div>
             </div>
-            <div class="contact-sec4-slide contact-sec4-slide2">
-              <div class="contact-sec4-content">
+            <div className="contact-sec4-slide contact-sec4-slide2">
+              <div className="contact-sec4-content">
                 <ul>
                   <li>
                     <MdLocationOn size="2.5rem" color="#F0A500" />
                     <span>
-                      Plot no 21, street no 4 <br /> steel fabrication Market,{" "}
-                      <br /> I-10 Islamabad
+                      P-43 Kareem Super <br /> market near Eden Garden
                     </span>
                   </li>
                   <li>
@@ -202,20 +206,20 @@ function Contact() {
 
           {/* ****Card Four**** */}
 
-          <div class="contact-sec4-card">
-            <div class="contact-sec4-slide contact-sec4-slide1">
-              <div class="contact-sec4-content contact-sec4-content1">
-                <h3 class="contact-sec4-card-title">ISLAMABAD</h3>
+          <div className="contact-sec4-card">
+            <div className="contact-sec4-slide contact-sec4-slide1">
+              <div className="contact-sec4-content contact-sec4-content1">
+                <h3 className="contact-sec4-card-title">FAISALABAD-2</h3>
               </div>
             </div>
-            <div class="contact-sec4-slide contact-sec4-slide2">
-              <div class="contact-sec4-content">
+            <div className="contact-sec4-slide contact-sec4-slide2">
+              <div className="contact-sec4-content">
                 <ul>
                   <li>
                     <MdLocationOn size="2.5rem" color="#F0A500" />
                     <span>
-                      Plot no 21, street no 4 <br /> steel fabrication Market,{" "}
-                      <br /> I-10 Islamabad
+                      Beside Over Head Bridge <br /> Near sitara Engineers,
+                      <br /> Nishatabad
                     </span>
                   </li>
                   <li>
@@ -229,20 +233,19 @@ function Contact() {
 
           {/* ****Card Five**** */}
 
-          <div class="contact-sec4-card">
-            <div class="contact-sec4-slide contact-sec4-slide1">
-              <div class="contact-sec4-content contact-sec4-content1">
-                <h3 class="contact-sec4-card-title">ISLAMABAD</h3>
+          <div className="contact-sec4-card">
+            <div className="contact-sec4-slide contact-sec4-slide1">
+              <div className="contact-sec4-content contact-sec4-content1">
+                <h3 className="contact-sec4-card-title">SAHIWAL</h3>
               </div>
             </div>
-            <div class="contact-sec4-slide contact-sec4-slide2">
-              <div class="contact-sec4-content">
+            <div className="contact-sec4-slide contact-sec4-slide2">
+              <div className="contact-sec4-content">
                 <ul>
                   <li>
                     <MdLocationOn size="2.5rem" color="#F0A500" />
                     <span>
-                      Plot no 21, street no 4 <br /> steel fabrication Market,{" "}
-                      <br /> I-10 Islamabad
+                      Office no 18 Super market <br /> Church Road, Sahiwal
                     </span>
                   </li>
                   <li>
@@ -256,20 +259,19 @@ function Contact() {
 
           {/* ****Card Six**** */}
 
-          <div class="contact-sec4-card">
-            <div class="contact-sec4-slide contact-sec4-slide1">
-              <div class="contact-sec4-content contact-sec4-content1">
-                <h3 class="contact-sec4-card-title">ISLAMABAD</h3>
+          <div className="contact-sec4-card">
+            <div className="contact-sec4-slide contact-sec4-slide1">
+              <div className="contact-sec4-content contact-sec4-content1">
+                <h3 className="contact-sec4-card-title">KARACHI</h3>
               </div>
             </div>
-            <div class="contact-sec4-slide contact-sec4-slide2">
-              <div class="contact-sec4-content">
+            <div className="contact-sec4-slide contact-sec4-slide2">
+              <div className="contact-sec4-content">
                 <ul>
                   <li>
                     <MdLocationOn size="2.5rem" color="#F0A500" />
                     <span>
-                      Plot no 21, street no 4 <br /> steel fabrication Market,{" "}
-                      <br /> I-10 Islamabad
+                      2ND Floor, Plot 6-U, <br /> Block 6, PECHS, Karachi
                     </span>
                   </li>
                   <li>

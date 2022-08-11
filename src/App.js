@@ -10,6 +10,7 @@ import Product1 from "./components/Product1";
 import { Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import LargerView from "./components/LargerView";
+import Email from "./components/Email";
 
 function App() {
   const location = useLocation();
@@ -28,6 +29,7 @@ function App() {
           <Route path="/products" element={<Products />} />
           <Route path="/product1" element={<Product1 />} />
           <Route path="/largerview" element={<LargerView />} />
+          <Route path="/warrantyform" element={<Email />} />
         </Routes>
       </AnimatePresence>
 

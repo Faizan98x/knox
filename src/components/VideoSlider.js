@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { VideoData } from "../Data/VideoData";
-import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
+import { RiArrowRightSLine, RiArrowLeftSLine } from "react-icons/ri";
 import "../Styles/VideoSlider.css";
 
 const VideoSlider = ({ videos }) => {
@@ -21,8 +21,8 @@ const VideoSlider = ({ videos }) => {
 
   return (
     <section className="videoslider">
-      <FaArrowAltCircleLeft className="vleft-arrow" onClick={prevSlide} />
-      <FaArrowAltCircleRight className="vright-arrow" onClick={nextSlide} />
+      <RiArrowLeftSLine className="vleft-arrow" onClick={prevSlide} />
+      <RiArrowRightSLine className="vright-arrow" onClick={nextSlide} />
       {VideoData.map((slide, index) => {
         return (
           <div
@@ -31,6 +31,7 @@ const VideoSlider = ({ videos }) => {
           >
             {index === current && (
               <video className="video" controls>
+                <source src={slide.knoxvideo} type="video/mp4" />
                 <source src={slide.knoxvideo} type="video/mp4" />
               </video>
             )}

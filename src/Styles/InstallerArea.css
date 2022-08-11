@@ -1,37 +1,50 @@
-.InstallerArea {
+
+.InstallerArea-section1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #343f4f;
+  color: #eee;
+  height: 50vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../images/solar-power-panel.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Video Area */
+
+.installer-video-area {
   padding: 5rem;
 }
 
-.InstallerArea h5 {
-  background: linear-gradient(blueviolet, violet);
-  height: 50vh;
-}
-
-.installer-video-area,
-.installerarea-warranty,
-.InstallerArea-download {
-  display: grid;
-  place-items: center;
-}
-
-.installer-video-area h4,
-.installerarea-warranty h4,
-.InstallerArea-download h4 {
-  margin: 8rem 0;
-  text-transform: uppercase;
-  color: blue;
-  letter-spacing: 0.1ch;
-  border-bottom: 2px solid blueviolet;
-  font-family: var(--style-family);
+.installer-video-area h4 {
+  margin-bottom: 5rem;
+  text-align: center;
 }
 
 /* Warranty Area */
 
+.installerarea-warranty{
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/power-solar-panels-against-blue-sky-background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5rem 0;
+  color: #eee;
+}
 .warranty-div {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   gap: 2rem;
   padding: 0 5rem;
+}
+
+.installerarea-warranty h4 {
+  margin-bottom: 5rem;
+  text-transform: capitalize;
+  text-align: center;
 }
 
 .warranty-info-div,
@@ -78,7 +91,7 @@
 .warranty-extension-div p {
   margin: 2rem 0;
   text-align: justify;
-  color: #717171;
+  color: #fff;
   padding: 1rem;
 }
 
@@ -87,22 +100,20 @@
 .warranty-extension-div .btn:hover {
   background-color: purple;
 }
-/* 
-.hover {
-  border: 8px solid;
-  border-image: repeating-linear-gradient(135deg,#F8CA00 0 10px,#E97F02 0 20px,#BD1550 0 30px) 8;
-  -webkit-mask: 
-    conic-gradient(from 180deg at top 8px right 8px, #0000 90deg,#000 0)
-     var(--_i,200%) 0  /200% var(--_i,8px) border-box no-repeat,
-    conic-gradient(at bottom 8px left  8px,  #0000 90deg,#000 0)
-     0   var(--_i,200%)/var(--_i,8px) 200% border-box no-repeat,
-    linear-gradient(#000 0 0) padding-box no-repeat;
-  transition: .3s, -webkit-mask-position .3s .3s;
-}
-.hover:hover {
-  --_i: 100%;
-  color: #CC333F;
-  transition: .3s, -webkit-mask-size .3s .3s;
-} */
 
-/* freefrontend */
+/* Download Area */
+
+.InstallerArea-download {
+  padding: 10rem;
+}
+
+.download-block {
+  margin: 5rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+}
+
+.download-block-1st button {
+  font-size: 2.2rem;
+  background: none;
+}

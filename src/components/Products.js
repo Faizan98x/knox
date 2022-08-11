@@ -15,7 +15,7 @@ function Products() {
     >
       <h6>Single Phase Inverter</h6>
       {/* first one */}
-      <motion.div id="#single" className="product-box product-single-phase">
+      <motion.div id="test1" className="product-box product-single-phase">
         <div className="product-single-phase-1">
           <p>
             ASW S Series <br /> 3 to 5 kW
@@ -37,7 +37,7 @@ function Products() {
       </motion.div>
       {/* second one */}
       <h6>Three Phase Inverter</h6>
-      <div className="product-box product-three-phase">
+      <div id="test2" className="product-box product-three-phase">
         {" "}
         <div className="product-single-phase-1">
           <p>
@@ -86,15 +86,16 @@ function Products() {
         </div>
       </div>
       {/* third one */}
-      <h6>Hybrid Inverter</h6>
-      <div className="product-box product-hybrid">
-        {" "}
-        <div className="product-single-phase-1">
-          <p>
-            ASW H-S2 Series <br /> 3 to 6 kW
-          </p>
-          <img src={product1img} alt="inverter" width={"230px"} />
-          <button className="btn">Coming Soon</button>
+      <div id="test3">
+        <h6>Hybrid Inverter</h6>
+        <div className="product-box product-hybrid">
+          <div className="product-single-phase-1">
+            <p>
+              ASW H-S2 Series <br /> 3 to 6 kW
+            </p>
+            <img src={product1img} alt="inverter" width={"230px"} />
+            <button className="btn">Coming Soon</button>
+          </div>
         </div>
       </div>
     </motion.div>

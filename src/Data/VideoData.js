@@ -1,22 +1,18 @@
 import frog from "../videos/Frog.mp4";
 import sunset from "../videos/Sunset.mp4";
 import Mountains from "../videos/Mountains.mp4";
-import play from "../images/play.png"
 
 export const VideoData = [
   {
-    id: 1,
+    id: 8,
     knoxvideo: frog,
-    playimg: play,
   },
   {
-    id: 2,
+    id: 9,
     knoxvideo: sunset,
-    playimg: play,
   },
   {
-    id: 3,
+    id: 10,
     knoxvideo: Mountains,
-    playimg: play,
   },
 ];

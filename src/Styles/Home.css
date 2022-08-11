@@ -9,6 +9,18 @@
   background-size: cover;
   position: relative;
   text-align: center;
+  animation-name: homebg;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
+}
+
+@keyframes homebg {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
 }
 
 .home-display-text {
@@ -95,11 +107,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.home-sec3 img,
-.home-sec5 img {
-  min-width: 65rem;
 }
 
 .home-sec3-text {
