@@ -1,25 +1,10 @@
 /* ******************** Section One Starts from Here ******************** */
 
-/* .contact .section1 {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 5rem;
-}
-
-.section1 h1 {
-  font-weight: 900;
-  letter-spacing: 0.5ch;
-  background: -webkit-linear-gradient(#03254c, #2a9df4);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-} */
 
 /* ******************** Section Two Starts from Here ******************** */
 
 .contact .section2 {
-  padding: 5rem;
+  padding: clamp(1.5rem, 1.5vw, 5rem);
   background-color: var(--black-color);
   color: var(--yellow-color);
 }
@@ -40,14 +25,15 @@
 
 .section2 .section2-subsection {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  place-items: center;
+  gap: 3rem;
 }
 
 .subsection-left-side,
 .subsection-right-side {
-  width: 40rem;
-  height: 15rem;
+  max-width: 40rem;
+  min-height: 15rem;
   display: flex;
   align-items: center;
 }
@@ -74,11 +60,16 @@
 /* ******************** Section Three Starts from Here ******************** */
 
 .section3 {
-  padding: 5rem;
+  padding-block: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: var(--silk-color);
 }
 
 .section3 .offices-title {
+  font-size: clamp(5.5rem, 3.5vw, 7.2rem);
   text-align: center;
   margin-bottom: 5rem;
   color: var(--yellow-color);
@@ -86,18 +77,19 @@
 
 .section3-sub {
   position: relative;
-  max-width: 35rem;
-  min-height: 25rem;
+  width: 35rem;
+  height: 25rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto;
+  margin: 0 1.5rem;
   border-radius: 0.5rem;
   background-color: #fff;
   box-shadow: var(--box-shadow);
 }
 
 .section3-sub .title-china {
+  font-size: clamp(4.5rem, 3.5vw, 6rem);
   letter-spacing: 0.5ch;
   color: var(--black-color);
 }
@@ -136,20 +128,23 @@
 /* ******************** Section Four Starts from Here ******************** */
 
 .section4 {
-  padding: 5rem;
+  padding-block: 5rem;
   background-color: #fff;
 }
 
 .section4 .title-pakistan,
 .section5 h2 {
+  font-size: clamp(4.5rem, 3.5vw, 6rem);
   letter-spacing: 0.5ch;
   color: var(--black-color);
   text-align: center;
 }
 
 .contact-sec4-cards {
+  padding: 0 2rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  gap: 3rem;
   place-items: center;
   cursor: pointer;
 }
@@ -168,7 +163,7 @@
 }
 .contact-sec4-card-title {
   color: #fff;
-  font-size: 40px;
+  font-size: clamp(1rem, 3.5vw, 4rem);
 }
 
 .contact-sec4-slide {
@@ -196,7 +191,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 5rem;
   box-sizing: border-box;
   transition: 0.8s;
   transform: translateY(-100px);
@@ -213,14 +208,11 @@
   height: 4px;
   bottom: 15px;
   left: 50%;
-  left: 50%;
   transform: translateX(-50%);
   background: #2c73df;
 }
 
 .contact-sec4-slide.contact-sec4-slide2 .contact-sec4-content p {
-  margin: 0;
-  padding: 0;
   text-align: center;
   color: #414141;
 }
@@ -246,7 +238,7 @@
 /* ******************** Section Five Starts from Here ******************** */
 
 .section5 {
-  padding: 5rem;
+  padding-block: 5rem;
   background-color: var(--silk-color);
 }
 
@@ -256,18 +248,20 @@
 }
 
 .box-container {
+  margin-inline: 1rem;
   margin-top: 12rem;
-  margin-bottom: 20rem;
+  margin-bottom: 15rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
+  row-gap: 5rem;
+  place-items: center;
   cursor: pointer;
 }
 
 .box {
   position: relative;
-  max-width: 35rem;
-  min-height: 25rem;
+  width: 35rem;
+  height: 25rem;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -307,7 +301,7 @@
 .box:hover .box-hover {
   top: 0;
   height: 100%;
-  padding: 2rem;
+  padding: 1.5rem;
 }
 
 .box ul li {

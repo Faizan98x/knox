@@ -6,7 +6,7 @@ import {
   BsFillClockFill,
   BsTwitter,
 } from "react-icons/bs";
-import { RiInstagramFill, RiFacebookCircleFill } from "react-icons/ri";
+import { RiLinkedinBoxFill, RiFacebookCircleFill } from "react-icons/ri";
 import { motion } from "framer-motion";
 
 function Contact() {
@@ -33,21 +33,47 @@ function Contact() {
           <div className="subsection-left-side">
             <ul>
               <li>
-                <MdLocationOn size="2.5rem" color="#F0A500" />{" "}
+                <MdLocationOn size="2.5rem" color="#F0A500" />
                 <span>
-                  Knox Pv Energy co., Ltd. Add: 168 Taiping south Road, <br />{" "}
-                  Nanjing, Jiangsu, China
+                  <a
+                    style={{ color: "#f0a500", fontSize: "1.6rem" }}
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    href="https://goo.gl/maps/v8vwnSCak5D3Q4RQ8"
+                  >
+                    Knox Pv Energy co., Ltd. Add: 168 Taiping south Road, <br />
+                    Nanjing, Jiangsu, China
+                  </a>
                 </span>
               </li>
 
               <li>
                 <MdEmail size="2.5rem" color="#F0A500" />
-                <span>info@knoxpv.com</span>{" "}
+                <span>
+                  {" "}
+                  <a
+                    style={{ color: "#f0a500", fontSize: "1.6rem" }}
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    href="mailto:info@knoxpv.com"
+                  >
+                    info@knoxpv.com
+                  </a>
+                </span>
               </li>
 
               <li>
                 <BsFillTelephoneFill size="2.5rem" color="#F0A500" />
-                <span>+92 304 111 Knox (5669)</span>
+                <span>
+                  <a
+                    style={{ color: "#f0a500", fontSize: "1.6rem" }}
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    href="tel:+92 304 111 Knox (5669)"
+                  >
+                    +92 304 111 Knox (5669)
+                  </a>
+                </span>
               </li>
             </ul>
           </div>
@@ -55,8 +81,18 @@ function Contact() {
           <div className="subsection-right-side">
             <ul>
               <li>
-                <RiInstagramFill size="2.5rem" color="#F0A500" />{" "}
-                <span>@instagram.com</span>
+                <RiLinkedinBoxFill size="2.5rem" color="#F0A500" />
+                <span>
+                  {" "}
+                  <a
+                    style={{ color: "#f0a500", fontSize: "1.6rem" }}
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    href="https://www.linkedin.com/company/knoxsolar/"
+                  >
+                    @KnoxSolar/linkedin
+                  </a>
+                </span>
               </li>
 
               <li>
@@ -65,16 +101,17 @@ function Contact() {
                   <a
                     style={{ color: "#f0a500", fontSize: "1.6rem" }}
                     href="https://www.facebook.com/KnoxStringInverter/"
-                    target="_blank" rel="noreferrer noopener"
+                    target="_blank"
+                    rel="noreferrer noopener"
                   >
-                    @KnoxStringInverter
+                    @KnoxSolar/facebook
                   </a>
-                </span>{" "}
+                </span>
               </li>
 
               <li>
                 <BsTwitter size="2.5rem" color="#F0A500" />
-                <span>@twiter.com</span>
+                <span>@KnoxSolar/twitter</span>
               </li>
             </ul>
           </div>
@@ -82,14 +119,14 @@ function Contact() {
 
         <h3 className="timing">
           <BsFillClockFill size="4rem" color="#F0A500" />
-          <span>Monday to Friday : 9am to 6pm</span>
+          <span>Monday To Friday 9am to 6pm</span>
         </h3>
       </div>
 
       {/* ******************** Section Three Starts from Here ******************** */}
 
       <div className="section3">
-        <h1 className="offices-title">OFFICES</h1>
+        <h1 className="offices-title">FACTORY</h1>
         <div className="section3-sub">
           <h2 className="title-china">CHINA</h2>
 
@@ -100,21 +137,48 @@ function Contact() {
               </li>
 
               <li className="section3-sub-li">
-                <MdLocationOn size="2.5rem" color="#F0A500" />{" "}
+                <MdLocationOn size="2.5rem" color="#F0A500" />
                 <span>
-                  Knox Pv Energy co, Ltd. Add: 168 Taiping south Road, <br />{" "}
-                  Nanjing, Jiangsu, China
-                </span>{" "}
+                  <a
+                    style={{ color: "#fff", fontSize: "1.6rem" }}
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    href="https://goo.gl/maps/v8vwnSCak5D3Q4RQ8"
+                  >
+                    Knox Pv Energy co., Ltd. <br /> Add: 168 Taiping south Road,{" "}
+                    <br />
+                    Nanjing, Jiangsu, China
+                  </a>
+                </span>
               </li>
 
               <li className="section3-sub-li">
-                <BsFillTelephoneFill size="2.5rem" color="#F0A500" />{" "}
-                <span>+8618321904184</span>{" "}
+                <BsFillTelephoneFill size="2.5rem" color="#F0A500" />
+                <span>
+                  <a
+                    style={{ color: "#fff", fontSize: "1.6rem" }}
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    href="tel:+92 304 111 Knox (5669)"
+                  >
+                    +92 304 111 Knox (5669)
+                  </a>
+                </span>
               </li>
 
               <li className="section3-sub-li">
-                <MdEmail size="2.5rem" color="#F0A500" />{" "}
-                <span>info@knoxpv.com</span>
+                <MdEmail size="2.5rem" color="#F0A500" />
+                <span>
+                  {" "}
+                  <a
+                    style={{ color: "#fff", fontSize: "1.6rem" }}
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    href="mailto:info@knoxpv.com"
+                  >
+                    info@knoxpv.com
+                  </a>
+                </span>
               </li>
             </ul>
           </div>
@@ -124,7 +188,7 @@ function Contact() {
       {/* ******************** Section Four Starts from Here ******************** */}
 
       <div className="section4">
-        <h2 className="title-pakistan">PAKISTAN</h2>
+        <h2 className="title-pakistan">SALE OFFICES</h2>
 
         <div className="contact-sec4-cards">
           {/* ****Card One**** */}
@@ -141,13 +205,29 @@ function Contact() {
                   <li>
                     <MdLocationOn size="2.5rem" color="#F0A500" />
                     <span>
-                      Plot no 21, street no 4 <br /> steel fabrication Market,{" "}
-                      <br /> I-10 Islamabad
+                      <a
+                        style={{ color: "#000", fontSize: "1.6rem" }}
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        href="Steel Fabrication Market, Plot 21 Street 4, I-10/3 I 10/3 I-10, Islamabad, Islamabad Capital Territory 44000, Pakistan"
+                      >
+                        Plot no 21, street no 4 <br /> steel fabrication Market,
+                        <br /> I-10 Islamabad
+                      </a>
                     </span>
                   </li>
                   <li>
                     <BsFillTelephoneFill size="2.5rem" color="#F0A500" />
-                    <span>+92 304 111 Knox (5669)</span>
+                    <span>
+                      <a
+                        style={{ color: "#000", fontSize: "1.6rem" }}
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        href="tel:+92 304 111 Knox (5669)"
+                      >
+                        +92 304 111 Knox (5669)
+                      </a>
+                    </span>
                   </li>
                 </ul>
               </div>
@@ -167,11 +247,29 @@ function Contact() {
                 <ul>
                   <li>
                     <MdLocationOn size="2.5rem" color="#F0A500" />
-                    <span>293-D Faisal town, Lahore</span>
+                    <span>
+                      <a
+                        style={{ color: "#000", fontSize: "1.6rem" }}
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        href="Steel Fabrication Market, Plot 21 Street 4, I-10/3 I 10/3 I-10, Islamabad, Islamabad Capital Territory 44000, Pakistan"
+                      >
+                        293-D Faisal town, Lahore
+                      </a>
+                    </span>
                   </li>
                   <li>
                     <BsFillTelephoneFill size="2.5rem" color="#F0A500" />
-                    <span>+92 304 111 Knox (5669)</span>
+                    <span>
+                      <a
+                        style={{ color: "#000", fontSize: "1.6rem" }}
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        href="tel:+92 304 111 Knox (5669)"
+                      >
+                        +92 304 111 Knox (5669)
+                      </a>
+                    </span>
                   </li>
                 </ul>
               </div>
@@ -192,12 +290,28 @@ function Contact() {
                   <li>
                     <MdLocationOn size="2.5rem" color="#F0A500" />
                     <span>
-                      P-43 Kareem Super <br /> market near Eden Garden
+                      <a
+                        style={{ color: "#000", fontSize: "1.6rem" }}
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        href="4th Floor, Lyallpur Regency, Plaza Mall Road, Faisalabad, Punjab 38000, Pakistan"
+                      >
+                        P-43 Kareem Super <br /> market near Eden Garden
+                      </a>
                     </span>
                   </li>
                   <li>
                     <BsFillTelephoneFill size="2.5rem" color="#F0A500" />
-                    <span>+92 304 111 Knox (5669)</span>
+                    <span>
+                      <a
+                        style={{ color: "#000", fontSize: "1.6rem" }}
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        href="tel:+92 304 111 Knox (5669)"
+                      >
+                        +92 304 111 Knox (5669)
+                      </a>
+                    </span>
                   </li>
                 </ul>
               </div>
@@ -218,13 +332,29 @@ function Contact() {
                   <li>
                     <MdLocationOn size="2.5rem" color="#F0A500" />
                     <span>
-                      Beside Over Head Bridge <br /> Near sitara Engineers,
-                      <br /> Nishatabad
+                      <a
+                        style={{ color: "#000", fontSize: "1.6rem" }}
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        href="4th Floor, Lyallpur Regency, Plaza Mall Road, Faisalabad, Punjab 38000, Pakistan"
+                      >
+                        Beside Over Head Bridge <br /> Near sitara Engineers,
+                        <br /> Nishatabad
+                      </a>
                     </span>
                   </li>
                   <li>
                     <BsFillTelephoneFill size="2.5rem" color="#F0A500" />
-                    <span>+92 304 111 Knox (5669)</span>
+                    <span>
+                      <a
+                        style={{ color: "#000", fontSize: "1.6rem" }}
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        href="tel:+92 304 111 Knox (5669)"
+                      >
+                        +92 304 111 Knox (5669)
+                      </a>
+                    </span>
                   </li>
                 </ul>
               </div>
@@ -233,7 +363,7 @@ function Contact() {
 
           {/* ****Card Five**** */}
 
-          <div className="contact-sec4-card">
+          {/* <div className="contact-sec4-card">
             <div className="contact-sec4-slide contact-sec4-slide1">
               <div className="contact-sec4-content contact-sec4-content1">
                 <h3 className="contact-sec4-card-title">SAHIWAL</h3>
@@ -250,12 +380,21 @@ function Contact() {
                   </li>
                   <li>
                     <BsFillTelephoneFill size="2.5rem" color="#F0A500" />
-                    <span>+92 304 111 Knox (5669)</span>
+                    <span>
+                      <a
+                        style={{ color: "#000", fontSize: "1.6rem" }}
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        href="tel:+92 304 111 Knox (5669)"
+                      >
+                        +92 304 111 Knox (5669)
+                      </a>
+                    </span>
                   </li>
                 </ul>
               </div>
             </div>
-          </div>
+          </div> */}
 
           {/* ****Card Six**** */}
 
@@ -271,12 +410,28 @@ function Contact() {
                   <li>
                     <MdLocationOn size="2.5rem" color="#F0A500" />
                     <span>
-                      2ND Floor, Plot 6-U, <br /> Block 6, PECHS, Karachi
+                      <a
+                        style={{ color: "#000", fontSize: "1.6rem" }}
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        href="4th Floor, Lyallpur Regency, Plaza Mall Road, Faisalabad, Punjab 38000, Pakistan"
+                      >
+                        2ND Floor, Plot 6-U, <br /> Block 6, PECHS, Karachi
+                      </a>
                     </span>
                   </li>
                   <li>
                     <BsFillTelephoneFill size="2.5rem" color="#F0A500" />
-                    <span>+92 304 111 Knox (5669)</span>
+                    <span>
+                      <a
+                        style={{ color: "#000", fontSize: "1.6rem" }}
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        href="tel:+92 304 111 Knox (5669)"
+                      >
+                        +92 304 111 Knox (5669)
+                      </a>
+                    </span>
                   </li>
                 </ul>
               </div>
@@ -365,7 +520,6 @@ function Contact() {
                   <MdLocationOn size="2.5rem" color="#F0A500" />
                   <span>
                     Plot no 21, street no 4 steel fabrication Market, I-10
-                    Islamabad
                   </span>
                 </li>
                 <li>

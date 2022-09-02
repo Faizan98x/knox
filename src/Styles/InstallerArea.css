@@ -5,29 +5,33 @@
   align-items: center;
   background: #343f4f;
   color: #eee;
-  height: 50vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("../images/solar-power-panel.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  text-transform: uppercase;
 }
 
 /* Video Area */
 
 .installer-video-area {
-  padding: 5rem;
+  padding: clamp(1rem, 3.5vw, 5rem);
 }
 
 .installer-video-area h4 {
   margin-bottom: 5rem;
   text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1ch;
 }
 
 /* Warranty Area */
 
 .installerarea-warranty{
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/power-solar-panels-against-blue-sky-background.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../images/power-solar-panels-against-blue-sky-background.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -36,37 +40,36 @@
 }
 .warranty-div {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  padding: 5rem;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   gap: 2rem;
-  padding: 0 5rem;
+  place-items: center;
 }
 
 .installerarea-warranty h4 {
-  margin-bottom: 5rem;
-  text-transform: capitalize;
+  text-transform: uppercase;
   text-align: center;
 }
 
 .warranty-info-div,
-.warranty-status-div,
-.warranty-extension-div {
+.warranty-status-div {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 3rem;
+  border: 1px solid gray;
+  box-shadow: var(--box-shadow);
 }
 
 .warranty-info-div h6,
-.warranty-status-div h6,
-.warranty-extension-div h6 {
-  margin-bottom: 2rem;
+.warranty-status-div h6{
   text-transform: capitalize;
   text-align: center;
   position: relative;
 }
 
 .warranty-info-div h6::after,
-.warranty-status-div h6::after,
-.warranty-extension-div h6::after {
+.warranty-status-div h6::after{
   content: "";
   position: absolute;
   bottom: -5px;
@@ -80,40 +83,63 @@
 }
 
 .warranty-info-div h6:hover::after,
-.warranty-status-div h6:hover::after,
-.warranty-extension-div h6:hover::after {
+.warranty-status-div h6:hover::after {
   width: 100%;
   left: 0%;
 }
 
 .warranty-info-div p,
-.warranty-status-div p,
-.warranty-extension-div p {
-  margin: 2rem 0;
+.warranty-status-div p {
   text-align: justify;
   color: #fff;
-  padding: 1rem;
+  padding: 4rem;
+  line-height: 2;
+  letter-spacing: 0.1ch;
+}
+
+.warranty-info-div .btn,
+.warranty-status-div .btn{
+  background-color: #ffbf00;
 }
 
 .warranty-info-div .btn:hover,
-.warranty-status-div .btn:hover,
-.warranty-extension-div .btn:hover {
+.warranty-status-div .btn:hover{
   background-color: purple;
 }
 
 /* Download Area */
 
 .InstallerArea-download {
-  padding: 10rem;
+  padding: clamp(2rem, 3.5vw, 10rem);
+  background-color: #0F3D3E;
+}
+
+.InstallerArea-download h4{
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.1ch;
 }
 
 .download-block {
   margin: 5rem 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 3rem;
 }
 
-.download-block-1st button {
+.button {
+  display: flex;
+  align-items: center;
+  color: #ffbf00;
+  font-size: 2.2rem;
+  background: none;
+}
+
+.button2 {
+  display: flex;
+  align-items: center;
+  color: #fff;
   font-size: 2.2rem;
   background: none;
 }

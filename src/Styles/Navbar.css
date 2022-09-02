@@ -1,7 +1,6 @@
 /* ******************** Navbar Styling ******************** */
 
 .navbar {
-  min-height: 2rem;
   box-shadow: var(--box-shadow);
   position: sticky;
   top: 0;
@@ -11,8 +10,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-inline: clamp(2rem, 1.5vw, 5rem); 
-  padding-block: clamp(0.5rem, 1.5vh, 1rem);
+  padding-inline: clamp(2rem, 3.5vw, 5rem); 
+  padding-block: clamp(0.5rem, 3.5vh, 1rem);
   z-index: 1000;
 }
 

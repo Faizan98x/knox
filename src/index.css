@@ -1,10 +1,80 @@
 /* ******************** Google Fonts Link ******************** */
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Playfair+Display:ital,wght@1,500;1,700&family=Saira+Stencil+One&display=swap");
 
+.warranty-check {
+  font-size: 1.6rem;
+  min-height: 100vh;
+  padding: 3rem;
+  background-color: #f7ecde;
+}
+
+.warranty-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  background: none;
+  border: none;
+  outline: none;
+  width: clamp(25rem, 58.5vw, 85rem);
+  margin: 2rem 0;
+  font-size: 1.8rem;
+  padding: 0 0.5rem;
+  border-bottom: 1px solid #000;
+}
+
+.add {
+  background-color: #3ab0ff;
+  border: none;
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  font-size: 1.8rem;
+  margin-left: 2rem;
+}
+
+.item {
+  position: relative;
+  width: clamp(25rem, 58.5vw, 85rem);
+  margin-top: 1rem;
+  background-color: #54bab9;
+  color: #fff;
+  padding: 1.5rem;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: auto auto;
+  line-height: 1.5;
+}
+
+.htext {
+  font-weight: bold;
+}
+
 /* ******************** Global Settings ******************** */
 
+/* width */
 ::-webkit-scrollbar {
-  display: none;
+  width: 5px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+  background: #2c3639;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #545454;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000;
 }
 
 :root {
@@ -16,6 +86,8 @@
   --primary-family: "Lato", sans-serif;
   --secondary-family: "Playfair Display", serif;
   --style-family: "Saira Stencil One", cursive;
+  --midnight: #2c3e50;
+  --clouds: #ecf0f1;
 }
 
 * {
@@ -26,29 +98,11 @@
   border: none;
 }
 
-.scroll-section {
-  min-height: 100vh;
-  margin: 8rem 0;
-  scroll-snap-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.scroll-section:nth-child(1) {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("./images/happy-young-asia-businessmen-businesswomen-meeting-brainstorming-ideas-about-new-paperwork-project-colleagues-working-together-planning-success-strategy-enjoy-teamwork-small-modern-office.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
 html {
   min-height: 100%;
   max-width: 100%;
   font-size: 62.5%;
   scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
 }
 
 body {
@@ -129,10 +183,55 @@ p {
 }
 
 @media only screen and (max-width: 750px) {
-  .navbar {
+  /* home ka section four */
+
+  .home .home-sec4 {
+    display: none;
+  }
+
+  /* home ka qstn and ans ka section */
+
+  .home .home-sec6 {
+    padding-inline: 0;
+  }
+
+  .home .home-sec6 .accordionsection {
+    padding: 0;
+  }
+
+  /* About Page ka section one */
+
+  .about .scroll-section {
+    min-height: 60vh;
+  }
+
+  .about .scroll-section .about-section3 img {
+    display: none;
+  }
+
+  .about .scroll-section .about-section3 {
+    justify-content: center;
+  }
+
+  .about .scroll-section .about-section3 .about-section3-text-area {
+    margin: 2rem;
+  }
+
+  /* Installer Area  */
+
+  .InstallerArea
+    .installerarea-warranty
+    .warranty-div
+    .warranty-info-div
+    .warranty-buttons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* .navbar {
     display: flex;
     justify-content: space-between;
-  }
+  } */
 
   .navbar .navlinks {
     min-height: 80vh;
@@ -145,7 +244,7 @@ p {
     justify-content: space-evenly;
     align-items: center;
     background-color: #05595b;
-    transform: translateX(100%);
+    transform: translateY(-1000%);
     transition: transform 0.5s ease;
   }
 
@@ -162,7 +261,7 @@ p {
   }
 
   .navbar .navlinks.active {
-    transform: translateX(0%);
+    transform: translateY(0%);
   }
 }
 

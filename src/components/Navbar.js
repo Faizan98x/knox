@@ -5,6 +5,7 @@ import "../Styles/Navbar.css";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 function Navbar() {
+
   const [click, setClick] = useState(false);
 
   const handleclick = () => setClick(!click);

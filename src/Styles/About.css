@@ -4,14 +4,41 @@
 
 /* ******************** Section One Starts from Here ******************** */
 
-/* .about-section1 {
-  margin-inline: clamp(1.5rem, 10vw, 30rem);
-  margin-block: clamp(3rem, 10vh, 5rem);
-} */
+.scroll-section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scroll-section:nth-child(1) {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/happy-young-asia-businessmen-businesswomen-meeting-brainstorming-ideas-about-new-paperwork-project-colleagues-working-together-planning-success-strategy-enjoy-teamwork-small-modern-office.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.scroll-section:nth-child(2) {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.scroll-section:nth-child(3) {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5));
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
 
 
 .about-section1 h1 {
-  font-size: clamp(3rem, 10vw, 20rem);
+  font-size: clamp(4rem, 10vw, 20rem);
   font-weight: 900;
   letter-spacing: 0.2ch;
   background: -webkit-linear-gradient(#03254c, #2a9df4);
@@ -23,7 +50,7 @@
 /* ******************** Section Two Starts from Here ******************** */
 
 .about-section2 {
-  margin: 6rem 10rem;
+  margin: clamp(1.5rem, 1.5vw, 6rem);
 }
 
 .about-section2 h1 {
@@ -52,14 +79,18 @@
 }
 
 .about-section3-text-area h1 {
+  text-transform: capitalize;
   color: #fff;
   margin-bottom: 2rem;
+  font-size: clamp(3rem, 1.5vw, 7.2rem);
 }
 
 .about-section3-text-area p {
+  text-transform: capitalize;
   line-height: 2.2;
   text-align: justify;
   color: #7f8487;
+  font-size: clamp(1.4rem, 1.5vw, 2rem);
 }
 
 .about-section3 img {

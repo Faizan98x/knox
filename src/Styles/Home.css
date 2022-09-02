@@ -1,51 +1,34 @@
 /* Home First Section Starts From Here */
 
-
 .Homefront {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-height: 100vh;
   max-width: 100%;
-  background: url("../images/product2.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/product2.jpg");
   background-position: center;
   background-size: cover;
   position: relative;
   text-align: center;
   animation-name: homebg;
-  animation-timing-function: ease-in;
+  animation-timing-function: ease;
   animation-duration: 2s;
 }
 
 @keyframes homebg {
-  0%{
+  0% {
     opacity: 0;
   }
-  100%{
+  100% {
     opacity: 1;
   }
 }
 
 .home-display-text {
-  position: absolute;
-  top: 35%;
-  right: 10rem;
   letter-spacing: 0.1ch;
   text-transform: uppercase;
-}
-
-.home-display-text h1 {
-  font-family: var(--style-family);
-  font-size: 12rem;
-  background: -webkit-linear-gradient(#03254c, #2a9df4);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.home-display-text p {
-  font-family: var(--secondary-family);
-  font-weight: 900;
-  background: -webkit-linear-gradient(#03254c, #2a9df4);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 /* Home First Section Ends Here */
@@ -53,7 +36,7 @@
 /* Home Section Two Starts From Here */
 
 .home-sec2 h3 {
-  font-size: 8rem;
+  font-size: clamp(3rem, 1.5vw, 8rem);
   color: #141414;
   text-transform: uppercase;
   text-align: center;
@@ -93,7 +76,7 @@
   transform: scale(1.1);
 }
 
-.home-sec2-part2 li:hover .btn{
+.home-sec2-part2 li:hover .btn {
   background-color: #f1356d;
 }
 
@@ -103,26 +86,46 @@
 
 .home-sec3,
 .home-sec5 {
-  background: linear-gradient(#4ca1af, #c4e0e5);
   display: flex;
+  flex-direction: column;
+  text-transform: capitalize;
   justify-content: center;
   align-items: center;
+  padding: clamp(2rem, 1.5vw, 5rem);
+  color: #fff;
+  min-height: 70vh;
+  max-width: 100vw;
 }
 
-.home-sec3-text {
-  padding-inline: 6rem;
+.home-sec3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../images/installation.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-.home-sec3-text h3,
-.home-sec5-text h3 {
-  margin-bottom: 6rem;
-  text-transform: capitalize;
+.home-sec5 {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../images/bestinverter.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-/* Home Section Five Starts from here */
+.home-sec3 .home-sec3-text h3,
+.home-sec5 .home-sec5-text h3 {
+  font-size: clamp(2.5rem, 1.5vw, 5.2rem);
+  margin-bottom: 5rem;
+}
 
-.home-sec5-text {
-  padding: 2rem 4rem;
+.home-sec3 .home-sec3-text p,
+.home-sec5 .home-sec5-text p {
+  font-size: clamp(1.4rem, 1.5vw, 2rem);
+  max-width: 75ch;
+  text-align: justify;
 }
 
 /* Home Section Four Starts from here */
@@ -200,10 +203,76 @@
 /* Home Section Six Starts from here */
 
 .home-sec6 {
-  padding: 5rem;
+  padding: clamp(2rem, 3.5vw, 5rem);
 }
 
 .home-sec6 h5 {
-  margin-top: 5rem;
+  margin: 5rem 0;
   text-align: center;
+}
+
+
+
+.qstninput {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+/* Accordion styles */
+.tabs {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+}
+.tab {
+  width: 100%;
+  color: white;
+  overflow: hidden;
+}
+.tab-label {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.8rem;
+  background: #2c3e50;
+  font-weight: bold;
+  cursor: pointer;
+  /* Icon */
+}
+.tab-label:hover {
+  background: #1a252f;
+}
+.tab-label::after {
+  content: "\276F";
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  transition: all 0.35s;
+}
+.tab-content {
+  max-height: 0;
+  padding: 0 1.8rem;
+  color: #2c3e50;
+  background: white;
+  transition: all 0.35s;
+}
+.tab-close {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1em;
+  font-size: 0.75em;
+  background: #2c3e50;
+  cursor: pointer;
+}
+.tab-close:hover {
+  background: #1a252f;
+}
+.qstninput:checked + .tab-label {
+  background: #1a252f;
+}
+.qstninput:checked + .tab-label::after {
+  transform: rotate(90deg);
+}
+.qstninput:checked ~ .tab-content {
+  max-height: 100vh;
+  padding: 1em;
 }

@@ -30,10 +30,14 @@ const VideoSlider = ({ videos }) => {
             key={index}
           >
             {index === current && (
-              <video className="video" controls>
-                <source src={slide.knoxvideo} type="video/mp4" />
-                <source src={slide.knoxvideo} type="video/mp4" />
-              </video>
+              <iframe
+                width="560"
+                height="315"
+                src={slide.knoxvideo}
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen;"
+              ></iframe>
             )}
           </div>
         );

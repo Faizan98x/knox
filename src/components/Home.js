@@ -1,13 +1,12 @@
 import React from "react";
 import "../Styles/Home.css";
-import ProductThreeGray from "../images/installation.jpg";
-import ProductfourGray from "../images/bestinverter.jpg";
 import inverterasw from "../images/inverterasw.png";
-import Accordion from "../components/Accordion";
 import { motion } from "framer-motion";
 import { HashLink } from "react-router-hash-link";
+import logo from "../images/logo.png";
 
 function Home() {
+
   return (
     <motion.div
       className="home"
@@ -20,8 +19,7 @@ function Home() {
 
       <div className="Homefront">
         <div className="home-display-text">
-          <h1>Knox</h1>
-          <p>Powering Generations</p>
+          <img width="100%" src={logo} alt="" />
         </div>
       </div>
 
@@ -92,12 +90,6 @@ function Home() {
       {/* Home Section Three Starts From Here */}
 
       <div className="home-sec3">
-        <img
-          style={{ width: "64rem" }}
-          data-aos="fade-right"
-          src={ProductThreeGray}
-          alt=""
-        />
         <div data-aos="fade-left" className="home-sec3-text">
           <h3>Installation takes minutes</h3>
           <p>
@@ -116,40 +108,76 @@ function Home() {
 
       {/* Home Section Three Ends Here */}
 
-      {/* Home Section Five Starts From Here */}
+      {/* Home Section Six Starts From Here*/}
+
+      <div className="home-sec6">
+        <h5 data-aos="fade-down">Frequently asked questions?</h5>
+
+        {/* accordion starts */}
+
+        <div className="tabs">
+          <div className="tab">
+            <input className="qstninput" type="checkbox" id="chck1" />
+            <label style={{fontSize: "1.7rem"}} className="tab-label" for="chck1">
+              Item 1
+            </label>
+            <div className="tab-content">
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque recusandae incidunt unde minus, architecto ipsa. Labore error nisi reprehenderit omnis voluptate voluptatum, iste architecto, laboriosam modi veritatis, aliquam ipsum praesentium.</p>
+            </div>
+          </div>
+
+          <div className="tab">
+            <input className="qstninput" type="checkbox" id="chck2" />
+            <label style={{fontSize: "1.7rem"}} className="tab-label" for="chck2">
+              Item 1
+            </label>
+            <div className="tab-content">
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque recusandae incidunt unde minus, architecto ipsa. Labore error nisi reprehenderit omnis voluptate voluptatum, iste architecto, laboriosam modi veritatis, aliquam ipsum praesentium.</p>
+            </div>
+          </div>
+
+
+          <div className="tab">
+            <input className="qstninput" type="checkbox" id="chck3" />
+            <label style={{fontSize: "1.7rem"}} className="tab-label" for="chck3">
+              Item 1
+            </label>
+            <div className="tab-content">
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque recusandae incidunt unde minus, architecto ipsa. Labore error nisi reprehenderit omnis voluptate voluptatum, iste architecto, laboriosam modi veritatis, aliquam ipsum praesentium.</p>
+            </div>
+          </div>
+
+          <div className="tab">
+            <input className="qstninput" type="checkbox" id="chck4" />
+            <label style={{fontSize: "1.7rem"}} className="tab-label" for="chck4">
+              Item 1
+            </label>
+            <div className="tab-content">
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque recusandae incidunt unde minus, architecto ipsa. Labore error nisi reprehenderit omnis voluptate voluptatum, iste architecto, laboriosam modi veritatis, aliquam ipsum praesentium.</p>
+            </div>
+          </div>
+        </div>
+
+        {/* accordion ends */}
+      </div>
 
       <div className="home-sec5">
         <div data-aos="fade-right" className="home-sec5-text">
           <h3>Our most popular inverter</h3>
           <p>
-            Our engineers refer to the ASW S-S series as ‘the residential’.{" "}
+            Our engineers refer to the ASW S-S series as ‘the residential’.
             <br />
             It’s also a big hit among our customers. <br /> <br />
             Knox has shipped many thousands of inverters from this series. Is
             this series also right for your customers? Discover more on our
             product page.
           </p>
-          <button style={{ marginTop: "2rem" }} className="btn">
+          <button style={{ marginTop: "5rem" }} className="btn">
             <HashLink style={{ color: "#fff" }} to="/installerarea" smooth>
               View Products
             </HashLink>
           </button>
         </div>
-        <img
-          style={{ width: "64rem" }}
-          data-aos="fade-left"
-          src={ProductfourGray}
-          alt=""
-        />
-      </div>
-
-      {/* Home Section Five Ends Here */}
-
-      {/* Home Section Six Starts From Here*/}
-
-      <div className="home-sec6">
-        <h5 data-aos="fade-down">Frequently asked questions?</h5>
-        <Accordion />
       </div>
 
       {/* Home Section Six Ends Here */}
