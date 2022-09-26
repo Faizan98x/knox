@@ -17,31 +17,31 @@ function Footer() {
       <div class="footer-box-container">
         <div class="footer-box">
           <h3>quick links</h3>
-          <a>
+          <a href="/#">
             <i>
               <FaArrowRight />
             </i>
             home
           </a>
-          <a>
+          <a href="/#">
             <i>
               <FaArrowRight />
             </i>
             about
           </a>
-          <a>
+          <a href="/#">
             <i>
               <FaArrowRight />
             </i>
             services
           </a>
-          <a>
+          <a href="/#">
             <i>
               <FaArrowRight />
             </i>
             projects
           </a>
-          <a>
+          <a href="/#">
             <i>
               <FaArrowRight />
             </i>
@@ -51,25 +51,25 @@ function Footer() {
 
         <div class="footer-box">
           <h3>contact info</h3>
-          <a>
+          <a href="/#">
             <i>
               <FaPhone />
             </i>
             +92-345-1245554
           </a>
-          <a>
+          <a href="/#">
             <i>
               <FaPhone />
             </i>
             +92-345-1245554
           </a>
-          <a>
+          <a href="/#">
             <i>
               <FaEnvelope />
             </i>
             muhammadfaizan98x@gmail.com
           </a>
-          <a>
+          <a href="/#">
             <i>
               <FaMapMarkerAlt />
             </i>
@@ -79,25 +79,25 @@ function Footer() {
 
         <div class="footer-box">
           <h3>contact info</h3>
-          <a>
+          <a href="/#">
             <i>
               <FaFacebook />
             </i>
             facebook
           </a>
-          <a>
+          <a href="/#">
             <i>
               <FaTwitter />
             </i>
             twitter
           </a>
-          <a>
+          <a href="/#">
             <i>
               <FaInstagram />
             </i>
             instagram
           </a>
-          <a>
+          <a href="/#">
             <i>
               <FaLinkedin />
             </i>
