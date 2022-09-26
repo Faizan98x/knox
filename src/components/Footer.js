@@ -17,92 +17,66 @@ function Footer() {
       <div class="footer-box-container">
         <div class="footer-box">
           <h3>quick links</h3>
-          <a href="#">
-            <i>
-              <FaArrowRight />
-            </i>
-            home
-          </a>
-          <a href="#">
-            <i>
-              <FaArrowRight />
-            </i>
-            about
-          </a>
-          <a href="#">
-            <i>
-              <FaArrowRight />
-            </i>
-            services
-          </a>
-          <a href="#">
-            <i>
-              <FaArrowRight />
-            </i>
-            projects
-          </a>
-          <a href="#">
-            <i>
-              <FaArrowRight />
-            </i>
-            contact
-          </a>
+          <i>
+            <FaArrowRight />
+          </i>
+          home
+          <i>
+            <FaArrowRight />
+          </i>
+          about
+          <i>
+            <FaArrowRight />
+          </i>
+          services
+          <i>
+            <FaArrowRight />
+          </i>
+          projects
+          <i>
+            <FaArrowRight />
+          </i>
+          contact
         </div>
 
         <div class="footer-box">
           <h3>contact info</h3>
-          <a href="#">
-            <i>
-              <FaPhone />
-            </i>
-            +92-345-1245554
-          </a>
-          <a href="#">
-            <i>
-              <FaPhone />
-            </i>
-            +92-345-1245554
-          </a>
-          <a href="#">
-            <i>
-              <FaEnvelope />
-            </i>
-            muhammadfaizan98x@gmail.com
-          </a>
-          <a href="#">
-            <i>
-              <FaMapMarkerAlt />
-            </i>
-            Islamabad, Pakistan
-          </a>
+          <i>
+            <FaPhone />
+          </i>
+          +92-345-1245554
+          <i>
+            <FaPhone />
+          </i>
+          +92-345-1245554
+          <i>
+            <FaEnvelope />
+          </i>
+          muhammadfaizan98x@gmail.com
+          <i>
+            <FaMapMarkerAlt />
+          </i>
+          Islamabad, Pakistan
         </div>
 
         <div class="footer-box">
           <h3>contact info</h3>
-          <a href="#">
-            <i>
-              <FaFacebook />
-            </i>
-            facebook
-          </a>
-          <a href="#">
-            <i>
-              <FaTwitter />
-            </i>
-            twitter
-          </a>
-          <a href="#">
-            <i>
-              <FaInstagram />
-            </i>
-            instagram
-          </a>
-          <a href="#">
-            <i>
-              <FaLinkedin />
-            </i>
-            linkedin
-          </a>
+          <i>
+            <FaFacebook />
+          </i>
+          facebook
+          <i>
+            <FaTwitter />
+          </i>
+          twitter
+          <i>
+            <FaInstagram />
+          </i>
+          instagram
+          <i>
+            <FaLinkedin />
+          </i>
+          linkedin
         </div>
       </div>
 
