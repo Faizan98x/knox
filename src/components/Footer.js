@@ -17,66 +17,92 @@ function Footer() {
       <div class="footer-box-container">
         <div class="footer-box">
           <h3>quick links</h3>
-          <i>
-            <FaArrowRight />
-          </i>
-          home
-          <i>
-            <FaArrowRight />
-          </i>
-          about
-          <i>
-            <FaArrowRight />
-          </i>
-          services
-          <i>
-            <FaArrowRight />
-          </i>
-          projects
-          <i>
-            <FaArrowRight />
-          </i>
-          contact
+          <a>
+            <i>
+              <FaArrowRight />
+            </i>
+            home
+          </a>
+          <a>
+            <i>
+              <FaArrowRight />
+            </i>
+            about
+          </a>
+          <a>
+            <i>
+              <FaArrowRight />
+            </i>
+            services
+          </a>
+          <a>
+            <i>
+              <FaArrowRight />
+            </i>
+            projects
+          </a>
+          <a>
+            <i>
+              <FaArrowRight />
+            </i>
+            contact
+          </a>
         </div>
 
         <div class="footer-box">
           <h3>contact info</h3>
-          <i>
-            <FaPhone />
-          </i>
-          +92-345-1245554
-          <i>
-            <FaPhone />
-          </i>
-          +92-345-1245554
-          <i>
-            <FaEnvelope />
-          </i>
-          muhammadfaizan98x@gmail.com
-          <i>
-            <FaMapMarkerAlt />
-          </i>
-          Islamabad, Pakistan
+          <a>
+            <i>
+              <FaPhone />
+            </i>
+            +92-345-1245554
+          </a>
+          <a>
+            <i>
+              <FaPhone />
+            </i>
+            +92-345-1245554
+          </a>
+          <a>
+            <i>
+              <FaEnvelope />
+            </i>
+            muhammadfaizan98x@gmail.com
+          </a>
+          <a>
+            <i>
+              <FaMapMarkerAlt />
+            </i>
+            Islamabad, Pakistan
+          </a>
         </div>
 
         <div class="footer-box">
           <h3>contact info</h3>
-          <i>
-            <FaFacebook />
-          </i>
-          facebook
-          <i>
-            <FaTwitter />
-          </i>
-          twitter
-          <i>
-            <FaInstagram />
-          </i>
-          instagram
-          <i>
-            <FaLinkedin />
-          </i>
-          linkedin
+          <a>
+            <i>
+              <FaFacebook />
+            </i>
+            facebook
+          </a>
+          <a>
+            <i>
+              <FaTwitter />
+            </i>
+            twitter
+          </a>
+          <a>
+            <i>
+              <FaInstagram />
+            </i>
+            instagram
+          </a>
+          <a>
+            <i>
+              <FaLinkedin />
+            </i>
+            linkedin
+          </a>
         </div>
       </div>
 
