@@ -25,9 +25,8 @@
 
 .section2 .section2-subsection {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   place-items: center;
-  gap: 3rem;
 }
 
 .subsection-left-side,

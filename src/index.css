@@ -263,6 +263,13 @@ p {
   .navbar .navlinks.active {
     transform: translateY(0%);
   }
+
+  .contact .section2 .section2-subsection {
+    display: grid;
+    place-items: start;
+  }
+
+  
 }
 
 /* ***************************************************************************************************** */
