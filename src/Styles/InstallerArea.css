@@ -7,7 +7,7 @@
   color: #eee;
   height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("../images/solar-power-panel.jpg");
+    url("../images/4.Installer-area-images/solar-power-panel.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -31,7 +31,7 @@
 /* Warranty Area */
 
 .installerarea-warranty{
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../images/power-solar-panels-against-blue-sky-background.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../images/4.Installer-area-images/power-solar-panels-against-blue-sky-background.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -107,39 +107,4 @@
   background-color: purple;
 }
 
-/* Download Area */
 
-.InstallerArea-download {
-  padding: clamp(2rem, 3.5vw, 10rem);
-  background-color: #0F3D3E;
-}
-
-.InstallerArea-download h4{
-  text-align: center;
-  color: #fff;
-  text-transform: uppercase;
-  letter-spacing: 0.1ch;
-}
-
-.download-block {
-  margin: 5rem 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  gap: 3rem;
-}
-
-.button {
-  display: flex;
-  align-items: center;
-  color: #ffbf00;
-  font-size: 2.2rem;
-  background: none;
-}
-
-.button2 {
-  display: flex;
-  align-items: center;
-  color: #fff;
-  font-size: 2.2rem;
-  background: none;
-}

@@ -15,7 +15,7 @@
 }
 
 .section2 .timing {
-  margin-top: 6rem;
+  margin-top: 4rem;
   text-align: center;
 }
 
@@ -60,11 +60,12 @@
 
 .section3 {
   padding-block: 5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  gap: 3rem;
+  place-items: center;
   background-color: var(--silk-color);
+  height: 90vh;
 }
 
 .section3 .offices-title {
@@ -88,9 +89,10 @@
 }
 
 .section3-sub .title-china {
-  font-size: clamp(4.5rem, 3.5vw, 6rem);
-  letter-spacing: 0.5ch;
-  color: var(--black-color);
+  font-size: clamp(5.5rem, 3.5vw, 7.2rem);
+  letter-spacing: 0.1ch;
+  color: var(--yellow-color);
+  text-align: center;
 }
 
 .section3-sub-overlay {
@@ -269,19 +271,19 @@
 }
 
 .box:nth-child(1) {
-  background-image: url("../images/faisalabad.jpg");
+  background-image: url("../images/5.Contact-page-images/faisalabad.jpg");
 }
 
 .box:nth-child(2) {
-  background-image: url("../images/Lahore.jpg");
+  background-image: url("../images/5.Contact-page-images/Lahore.jpg");
 }
 
 .box:nth-child(3) {
-  background-image: url("../images/Karachi.jpg");
+  background-image: url("../images/5.Contact-page-images/Karachi.jpg");
 }
 
 .box:nth-child(4) {
-  background-image: url("../images/Islamabad.jpg");
+  background-image: url("../images/5.Contact-page-images/Islamabad.jpg");
 }
 
 .box-hover {

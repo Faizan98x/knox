@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom"
 import "../Styles/Footer.css";
 import {
   FaArrowRight,
@@ -13,100 +14,100 @@ import {
 
 function Footer() {
   return (
-    <section class="footer" id="footer">
-      <div class="footer-box-container">
-        <div class="footer-box">
+    <section className="footer" id="footer">
+      <div className="footer-box-container">
+        <div className="footer-box">
           <h3>quick links</h3>
-          <a href="/#">
+          <Link to="/">
             <i>
               <FaArrowRight />
             </i>
-            home
-          </a>
-          <a href="/#">
+            Home
+          </Link>
+          <Link to="/about">
             <i>
               <FaArrowRight />
             </i>
-            about
-          </a>
-          <a href="/#">
+            About
+          </Link>
+          <Link to="/products">
             <i>
               <FaArrowRight />
             </i>
-            services
-          </a>
-          <a href="/#">
+            Products
+          </Link>
+          <Link to="/installerarea">
             <i>
               <FaArrowRight />
             </i>
-            projects
-          </a>
-          <a href="/#">
+            Installer Area
+          </Link>
+          <Link to="/contact">
             <i>
               <FaArrowRight />
             </i>
-            contact
-          </a>
+            Contact Us
+          </Link>
         </div>
 
-        <div class="footer-box">
+        <div className="footer-box">
           <h3>contact info</h3>
-          <a href="/#">
+          <Link to="/#">
             <i>
               <FaPhone />
             </i>
-            +92-345-1245554
-          </a>
-          <a href="/#">
-            <i>
-              <FaPhone />
-            </i>
-            +92-345-1245554
-          </a>
-          <a href="/#">
+            +92-302-111-5669(KNOX)
+          </Link>
+          <Link to="/#">
             <i>
               <FaEnvelope />
             </i>
-            muhammadfaizan98x@gmail.com
-          </a>
-          <a href="/#">
+            info@knoxpv.com
+          </Link>
+          <Link to="/#">
             <i>
               <FaMapMarkerAlt />
             </i>
-            Islamabad, Pakistan
-          </a>
+            Lb02126, Jebel Ali Free Zone Dubai, United Arab Emirates
+          </Link>
+          <Link to="/#">
+            <i>
+              <FaMapMarkerAlt />
+            </i>
+            Plot 21, Street 4, I-10/3, Islamabad, Pakistan
+          </Link>
         </div>
 
-        <div class="footer-box">
+        <div className="footer-box">
           <h3>contact info</h3>
-          <a href="/#">
+          <Link to="/#">
             <i>
               <FaFacebook />
             </i>
             facebook
-          </a>
-          <a href="/#">
+          </Link>
+          <Link to="/#">
             <i>
               <FaTwitter />
             </i>
             twitter
-          </a>
-          <a href="/#">
+          </Link>
+          <Link to="/#">
             <i>
               <FaInstagram />
             </i>
             instagram
-          </a>
-          <a href="/#">
+          </Link>
+          <Link to="/#">
             <i>
               <FaLinkedin />
             </i>
             linkedin
-          </a>
+          </Link>
         </div>
       </div>
 
-      <div class="credit">
+      <div className="credit">
         all rights reserved <br /> KNOX
       </div>
     </section>

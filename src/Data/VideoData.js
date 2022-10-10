@@ -1,14 +1,18 @@
+import frog from "../videos/Frog.mp4"
+import Mountains from "../videos/Mountains.mp4"
+import Sunset from "../videos/Sunset.mp4"
+
 export const VideoData = [
   {
     id: 8,
-    knoxvideo: "https://www.youtube.com/embed/t15zxnm288Q",
+    knoxvideo: frog,
   },
   {
     id: 9,
-    knoxvideo: "https://www.youtube.com/embed/_1uS0_rgj14",
+    knoxvideo: Mountains,
   },
   {
     id: 10,
-    knoxvideo: "https://www.youtube.com/embed/EaUn9kaeC50",
+    knoxvideo: Sunset,
   },
 ];

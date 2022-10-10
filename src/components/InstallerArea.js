@@ -1,27 +1,30 @@
-import React from "react";
-import "../Styles/InstallerArea.css";
+import { React } from "react";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+
 import VideoSlider from "./VideoSlider";
 import { VideoData } from "../Data/VideoData";
-import { useState } from "react";
-import pdffile from "../pdf files/knox.pdf";
-import { RiArrowRightSLine } from "react-icons/ri";
-import { BsDot, BsDownload } from "react-icons/bs";
-import { Link } from "react-router-dom";
-import knoxlogo from "../images/logo.png";
+import Downloadcenter from "./Downloadcenter";
+
+// installer area style file link
+import "../Styles/InstallerArea.css";
+
+// installer area images links
+import knoxlogo from "../images/knoxwhite.png";
+
+
+
+
+// Warranty pdf files
+
+import AusWarranty from "../pdf-files-Knox/Aiswei-Factory-Quality-Warranty-Terms-for-Australia-v1.3.pdf";
+import IntWarranty from "../pdf-files-Knox/Aiswei-Factory-Quality-Warranty-Terms-for-Overseas-Territory_V1.4.pdf";
+import PakWarranty from "../pdf-files-Knox/IMPOTAMT NOTICE KNOX.pdf";
+
+// ****************   usestates for download section  ******************
 
 function InstallerArea() {
-  const [show, setShow] = useState(false);
-  const [show2, setShow2] = useState(false);
-  const [show3, setShow3] = useState(false);
-  const [show4, setShow4] = useState(false);
-  const [showhybrid, setShowhybrid] = useState(false);
-  const [showsingle, setShowsingle] = useState(false);
-  const [showthree, setShowthree] = useState(false);
-  const [showbrochuresDownload, setShowbrochuresDownload] = useState(false);
-  const [showhybridDownload, setShowhybridDownload] = useState(false);
-  const [showsingleDownload, setShowsingleDownload] = useState(false);
-  const [showthreeDownload, setShowthreeDownload] = useState(false);
+  
 
   return (
     <motion.div
@@ -34,7 +37,12 @@ function InstallerArea() {
       <div className="InstallerArea-section1">
         <h2 style={{ textAlign: "center" }}>
           <span>
-            <img src={knoxlogo} width={350} alt="" />
+            <img
+              src={knoxlogo}
+              width={180}
+              style={{ marginRight: "2rem" }}
+              alt=""
+            />
           </span>
           Makes Things Easy
         </h2>
@@ -42,386 +50,7 @@ function InstallerArea() {
 
       {/* Download Area */}
 
-      <div className="InstallerArea-download">
-        <h4>Download Center</h4>
-
-        {/* main download headings */}
-        <div className="download-block">
-          <div className="download-block-1st">
-            <button
-              className={show ? "button" : "button2"}
-              onClick={() => {
-                setShow(true);
-                setShow2(false);
-                setShow3(false);
-                setShow4(false);
-                setShowhybrid(false);
-                setShowsingle(false);
-                setShowthree(false);
-                setShowbrochuresDownload(false);
-                setShowhybridDownload(false);
-                setShowsingleDownload(false);
-                setShowthreeDownload(false);
-              }}
-            >
-              <BsDot size={"3rem"} /> Datasheets
-            </button>
-            <br /> <br /> <br />
-            <button
-              className={show2 ? "button" : "button2"}
-              onClick={() => {
-                setShow(false);
-                setShow2(true);
-                setShow3(false);
-                setShow4(false);
-                setShowhybrid(false);
-                setShowsingle(false);
-                setShowthree(false);
-                setShowbrochuresDownload(false);
-                setShowhybridDownload(false);
-                setShowsingleDownload(false);
-                setShowthreeDownload(false);
-              }}
-            >
-              <BsDot size={"3rem"} /> Certificates
-            </button>
-            <br /> <br /> <br />
-            <button
-              className={show3 ? "button" : "button2"}
-              onClick={() => {
-                setShow(false);
-                setShow2(false);
-                setShow3(true);
-                setShow4(false);
-                setShowhybrid(false);
-                setShowsingle(false);
-                setShowthree(false);
-                setShowbrochuresDownload(false);
-                setShowhybridDownload(false);
-                setShowsingleDownload(false);
-                setShowthreeDownload(false);
-              }}
-            >
-              <BsDot size={"3rem"} /> Instructions
-            </button>
-            <br /> <br /> <br />
-            <button
-              className={show4 ? "button" : "button2"}
-              onClick={() => {
-                setShow4(true);
-                setShow(false);
-                setShow2(false);
-                setShow3(false);
-                setShowhybrid(false);
-                setShowsingle(false);
-                setShowthree(false);
-                setShowhybridDownload(false);
-                setShowsingleDownload(false);
-                setShowthreeDownload(false);
-              }}
-            >
-              <BsDot size={"3rem"} /> Brochures
-            </button>
-          </div>
-          <div className="download-block-1st">
-            {show || show2 || show3 ? (
-              <motion.div
-                initial={{ X: -100, opacity: 0 }}
-                animate={{ X: 0, opacity: 1 }}
-                exit={{ X: -100, opacity: 0 }}
-                transition={{ duration: 0.5 }}
-                className="datasheets-area"
-              >
-                <button
-                  className={showhybrid ? "button" : "button2"}
-                  onClick={() => {
-                    setShowhybrid(true);
-                    setShowsingle(false);
-                    setShowthree(false);
-                  }}
-                >
-                  <BsDot size={"3rem"} /> Hybrid
-                </button>
-                <br /> <br /> <br />
-                <button
-                  className={showsingle ? "button" : "button2"}
-                  onClick={() => {
-                    setShowhybrid(false);
-                    setShowsingle(true);
-                    setShowthree(false);
-                  }}
-                >
-                  <BsDot size={"3rem"} /> Single Phase
-                </button>
-                <br /> <br /> <br />
-                <button
-                  className={showthree ? "button" : "button2"}
-                  onClick={() => {
-                    setShowhybrid(false);
-                    setShowsingle(false);
-                    setShowthree(true);
-                  }}
-                >
-                  <BsDot size={"3rem"} /> Three Phase
-                </button>
-              </motion.div>
-            ) : (
-              " "
-            )}
-
-            {show4 ? (
-              <motion.div
-                initial={{ X: -100, opacity: 0 }}
-                animate={{ X: 0, opacity: 1 }}
-                exit={{ X: -100, opacity: 0 }}
-                transition={{ duration: 0.5 }}
-                className="datasheets-area"
-              >
-                <button
-                  className={showbrochuresDownload ? "button" : "button2"}
-                  onClick={() => {
-                    setShowhybrid(false);
-                    setShowsingle(false);
-                    setShowthree(false);
-                    setShowbrochuresDownload(true);
-                  }}
-                >
-                  <BsDot size={"3rem"} /> Product Brochures
-                </button>
-              </motion.div>
-            ) : (
-              " "
-            )}
-          </div>
-          <div className="download-block-1st">
-            {/* hybrid inverter  */}
-
-            {showhybrid ? (
-              <motion.div
-                initial={{ X: -100, opacity: 0 }}
-                animate={{ X: 0, opacity: 1 }}
-                exit={{ X: -100, opacity: 0 }}
-                transition={{ duration: 0.5 }}
-                className="datasheets-area"
-              >
-                <button
-                  className={showhybridDownload ? "button" : "button2"}
-                  onClick={() => {
-                    setShowhybridDownload(true);
-                    setShowsingleDownload(false);
-                    setShowthreeDownload(false);
-                  }}
-                >
-                  <BsDot size={"3rem"} /> ASW 3 to 6kw
-                </button>
-              </motion.div>
-            ) : (
-              " "
-            )}
-
-            {/* single phase inverter */}
-
-            {showsingle ? (
-              <motion.div
-                initial={{ X: -100, opacity: 0 }}
-                animate={{ X: 0, opacity: 1 }}
-                exit={{ X: -100, opacity: 0 }}
-                transition={{ duration: 0.5 }}
-                className="datasheets-area"
-              >
-                <button
-                  className={showsingleDownload ? "button" : "button2"}
-                  onClick={() => {
-                    setShowhybridDownload(false);
-                    setShowsingleDownload(true);
-                    setShowthreeDownload(false);
-                  }}
-                >
-                  <BsDot size={"3rem"} /> ASW H2 3 to 6kw
-                </button>
-              </motion.div>
-            ) : (
-              " "
-            )}
-
-            {/* three phase inverter */}
-
-            {showthree ? (
-              <div className="datasheets-area">
-                <button
-                  className={showthreeDownload ? "button" : "button2"}
-                  onClick={() => {
-                    setShowhybridDownload(false);
-                    setShowsingleDownload(false);
-                    setShowthreeDownload(true);
-                  }}
-                >
-                  <BsDot size={"3rem"} /> ASW S2 3 to 6kw
-                </button>
-              </div>
-            ) : (
-              " "
-            )}
-          </div>
-        </div>
-
-        {/* datasheets, certificates, instructions, brochures download area  */}
-
-        {showbrochuresDownload ||
-        showhybridDownload ||
-        showsingleDownload ||
-        showthreeDownload ? (
-          <motion.div
-            initial={{ X: -100, opacity: 0 }}
-            animate={{ X: 0, opacity: 1 }}
-            exit={{ X: -100, opacity: 0 }}
-            transition={{ duration: 0.5 }}
-            style={{
-              background: "#eee",
-              padding: "4rem",
-              borderTop: "0.5px solid darkgray",
-            }}
-            className="pdf-file-viewer"
-          >
-            <h6 style={{ textAlign: "center", marginBottom: "5rem" }}>
-              Downloads
-            </h6>
-            {showbrochuresDownload ? (
-              <p
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "space-between",
-                }}
-              >
-                <a
-                  style={{
-                    fontSize: "1.4rem",
-                    display: "flex",
-                    alignItems: "center",
-                    color: "#000",
-                  }}
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  href={pdffile}
-                >
-                  <RiArrowRightSLine /> Product Brochures
-                </a>
-
-                <span style={{ fontSize: "1.4rem" }}>English</span>
-                <span style={{ fontSize: "1.4rem" }}>pdf file</span>
-
-                <a style={{ fontSize: "1.8rem" }} href={pdffile} download>
-                  <BsDownload />{" "}
-                </a>
-              </p>
-            ) : (
-              " "
-            )}
-
-            {showhybridDownload ? (
-              <p
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "space-between",
-                }}
-              >
-                <a
-                  style={{
-                    fontSize: "1.4rem",
-                    display: "flex",
-                    alignItems: "center",
-                    color: "#000",
-                  }}
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  href={pdffile}
-                >
-                  <RiArrowRightSLine /> Hybrid Inverter
-                </a>
-
-                <span style={{ fontSize: "1.4rem" }}>English</span>
-                <span style={{ fontSize: "1.4rem" }}>pdf file</span>
-
-                <a style={{ fontSize: "1.8rem" }} href={pdffile} download>
-                  <BsDownload />{" "}
-                </a>
-              </p>
-            ) : (
-              " "
-            )}
-
-            {showsingleDownload ? (
-              <p
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "space-between",
-                }}
-              >
-                <a
-                  style={{
-                    fontSize: "1.4rem",
-                    display: "flex",
-                    alignItems: "center",
-                    color: "#000",
-                  }}
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  href={pdffile}
-                >
-                  <RiArrowRightSLine /> Single Inverter
-                </a>
-
-                <span style={{ fontSize: "1.4rem" }}>English</span>
-                <span style={{ fontSize: "1.4rem" }}>pdf file</span>
-
-                <a style={{ fontSize: "1.8rem" }} href={pdffile} download>
-                  <BsDownload />{" "}
-                </a>
-              </p>
-            ) : (
-              " "
-            )}
-
-            {showthreeDownload ? (
-              <p
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "space-between",
-                }}
-              >
-                <a
-                  style={{
-                    fontSize: "1.4rem",
-                    display: "flex",
-                    alignItems: "center",
-                    color: "#000",
-                  }}
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  href={pdffile}
-                >
-                  <RiArrowRightSLine /> Three Inverter
-                </a>
-
-                <span style={{ fontSize: "1.4rem" }}>English</span>
-                <span style={{ fontSize: "1.4rem" }}>pdf file</span>
-
-                <a style={{ fontSize: "1.8rem" }} href={pdffile} download>
-                  <BsDownload />{" "}
-                </a>
-              </p>
-            ) : (
-              " "
-            )}
-          </motion.div>
-        ) : (
-          " "
-        )}
-      </div>
+      <Downloadcenter />
 
       {/* video area */}
 
@@ -450,9 +79,35 @@ function InstallerArea() {
             </p>
             <div className="warranty-buttons">
               <button style={{ marginRight: "1rem" }} className="btn">
-                International warranty
+                <a
+                  href={IntWarranty}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ color: "#fff" }}
+                >
+                  International warranty
+                </a>
               </button>
-              <button className="btn">Australian warranty</button>
+              <button style={{ marginRight: "1rem" }} className="btn">
+                <a
+                  href={AusWarranty}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ color: "#fff" }}
+                >
+                  Australian warranty
+                </a>
+              </button>
+              <button className="btn">
+                <a
+                  href={PakWarranty}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ color: "#fff" }}
+                >
+                  Pakistan warranty Notice
+                </a>
+              </button>
             </div>
           </div>
           {/* Grid Coloumn Two */}

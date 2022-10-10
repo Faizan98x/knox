@@ -2,37 +2,45 @@
   text-align: center;
 }
 
-.products h6 {
-  margin-top: 2rem;
+.products .product-box .product-box-subbox a{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.products h5 {
   text-transform: uppercase;
+  margin: 3rem 0;
 }
 
 .product-box {
   min-height: 80vh;
   background-color: #fff;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   place-items: center;
-  margin: 5rem 0;
+  gap: 3rem;
+  padding: 2rem;
 }
 
-.product-single-phase-1,
-.product-single-phase-2 {
+.product-box-subbox {
   background-color: #f7f5f2;
-  padding: 2rem clamp(2rem, 1.5vw, 5rem);
+  padding: 2rem clamp(3rem, 1.5vw, 5rem);
   border-radius: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
   transition: 1s ease;
 }
 
-.product-single-phase-1 img,
-.product-single-phase-2 img {
+.product-box-subbox img {
   transition: 1s ease;
+}
+
+.product-box-subbox p {
+  margin-bottom: 3rem;
 }
 
 .btn {
@@ -41,19 +49,16 @@
   margin-top: 1rem;
 }
 
-.product-single-phase-1:hover img,
-.product-single-phase-2:hover img {
+.product-box-subbox:hover img{
   transform: scale(1.1);
 }
 
-.product-single-phase-1:hover .btn,
-.product-single-phase-2:hover .btn {
+.product-box-subbox:hover .btn{
   transform: translateY(-5px);
   background-color: #f1356d;
 }
 
-.product-single-phase-1:hover,
-.product-single-phase-2:hover {
+.product-box-subbox:hover {
   color: #fff;
   background: #313131;
 }

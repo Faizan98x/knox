@@ -1,11 +1,10 @@
 import React from "react";
 import "../Styles/Product1.css";
 import ImageSlider from "./ImageSlider";
-import { SliderData } from "../Data/SliderData";
+import { HybridSinglePhaseData } from "../Data/SliderData";
 import * as BsIcons from "react-icons/bs";
 import * as FaIcons from "react-icons/fa";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
 
 function Product1() {
   return (
@@ -17,10 +16,7 @@ function Product1() {
     >
       <div className="product1">
         <div className="product1-left-side">
-          <ImageSlider className="show-largerviewbtn" slides={SliderData} />
-          <Link className="largerviewbtn btn" to="/largerview">
-            View Product
-          </Link>
+          <ImageSlider className="show-largerviewbtn" Sliderdata={HybridSinglePhaseData} slides={HybridSinglePhaseData} />
         </div>
         <div className="product1-right-side">
           <h6>Single Phase Inverter</h6>
@@ -28,12 +24,8 @@ function Product1() {
           <ul>
             <h6>Benefits</h6>
             <li>
-              {" "}
-              <BsIcons.BsCloudRainHeavyFill
-                size="2.5rem"
-                color="#F0A500"
-              />{" "}
-              <span>IP66 rated design​ for indoor or outdoor use</span>{" "}
+              <BsIcons.BsCloudRainHeavyFill size="2.5rem" color="#F0A500" />
+              <span>IP66 rated design​ for indoor or outdoor use</span>
             </li>
             <li>
               <BsIcons.BsLightning size="2.5rem" color="#F0A500" />

@@ -1,7 +1,14 @@
 import React from "react";
-import man from "../images/man.jpg";
-import worker from "../images/worker.jpg";
+
+// about images links
+import man from "../images/2.About-page-images/man.jpg";
+import worker from "../images/2.About-page-images/worker.jpg";
+
+// about style file link
+
 import "../Styles/About.css";
+
+
 import { motion } from "framer-motion";
 
 function About() {

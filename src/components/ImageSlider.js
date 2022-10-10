@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import { SliderData } from "../Data/SliderData";
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
 import "../Styles/ImageSlider.css";
 import { motion } from "framer-motion";
 
-const ImageSlider = ({ slides }) => {
+const ImageSlider = ({ slides, Sliderdata }) => {
   const [current, setCurrent] = useState(0);
   const length = slides.length;
 
@@ -21,27 +20,29 @@ const ImageSlider = ({ slides }) => {
   }
 
   return (
-    <section className="slider">
-      <FaArrowAltCircleLeft className="left-arrow" onClick={prevSlide} />
-      <FaArrowAltCircleRight className="right-arrow" onClick={nextSlide} />
-      {SliderData.map((slide, index) => {
-        return (
-          <div
-            className={index === current ? "slide active" : "slide"}
-            key={index}
-          >
-            {index === current && (
-              <motion.img
-                whileHover={{ scale: 1.1, transition: { duration: 1 } }}
-                src={slide.images}
-                alt="travel "
-                className="image"
-              />
-            )}
-          </div>
-        );
-      })}
-    </section>
+    <>
+      <section className="slider">
+        <FaArrowAltCircleLeft className="left-arrow" onClick={prevSlide} />
+        <FaArrowAltCircleRight className="right-arrow" onClick={nextSlide} />
+        {Sliderdata.map((slide, index) => {
+          return (
+            <div
+              className={index === current ? "slide active" : "slide"}
+              key={index}
+            >
+              {index === current && (
+                <motion.img
+                  whileHover={{ scale: 1.1, transition: { duration: 1 } }}
+                  src={slide.images}
+                  alt="travel "
+                  className="image"
+                />
+              )}
+            </div>
+          );
+        })}
+      </section>
+    </>
   );
 };
 

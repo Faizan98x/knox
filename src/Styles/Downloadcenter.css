@@ -1,0 +1,47 @@
+.download-block {
+  padding: clamp(2rem, 3.5vw, 10rem);
+  background-color: #0f3d3e;
+}
+
+.download-block .download-block-b a:hover{
+  color: #000;
+}
+
+.download-block .download-block-b a{
+  color: var(--orange-color);
+}
+
+.download-block h6 {
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.1ch;
+}
+
+.download-block-a {
+  margin: 5rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 3rem;
+}
+
+.download-block-b {
+  margin: 5rem 0;
+  padding: 2rem;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  color: #ffbf00;
+  font-size: 2.2rem;
+  background: none;
+}
+
+.button2 {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 2.2rem;
+  background: none;
+}

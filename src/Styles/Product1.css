@@ -1,4 +1,4 @@
-.product1-left-side .largerviewbtn {
+/* .product1-left-side .largerviewbtn {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -10,7 +10,7 @@
 
 .show-largerviewbtn:hover .largerviewbtn{
   opacity: 1;
-}
+} */
 
 .product1 {
   padding: 5rem 0;
@@ -22,11 +22,13 @@
 .product1-left-side {
   flex: 1 1 400px;
   position: relative;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .product1-right-side {
-  flex: 1 1 150px;
+  flex: 1 1 250px;
   padding: 0 5rem;
 }
 
@@ -53,4 +55,5 @@
 .product1-details p {
   text-align: justify;
   margin-bottom: 5rem;
+  color: #717171;
 }
