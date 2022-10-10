@@ -171,7 +171,7 @@ function Downloadcenter() {
   const [showdatasheets, setShowdatasheets] = useState(false);
   const [showcertificates, setShowcertificates] = useState(false);
   const [showinstructions, setShowinstructions] = useState(false);
-  const [showbrochures, setShowbrochures] = useState(false);
+  const [showbrochures, setShowbrochures] = useState(true);
 
   // 2nd block usestates
   const [showdatasheetshybrid, setShowdatasheetshybrid] = useState(false);
@@ -186,7 +186,7 @@ function Downloadcenter() {
   const [showinstructionssingle, setShowinstructionssingle] = useState(false);
   const [showinstructionsthree, setShowinstructionsthree] = useState(false);
 
-  const [showbrochuresDownload, setShowbrochuresDownload] = useState(false);
+  const [showbrochuresDownload, setShowbrochuresDownload] = useState(true);
 
   // 3rd block usestates
 
@@ -567,7 +567,7 @@ function Downloadcenter() {
                   setShowdatasheetsthree(false);
                 }}
               >
-                <BsDot size={"3rem"} /> Hybrid
+                <BsDot size={"3rem"} /> Hybrid Inverters
               </button>
               <br /> <br /> <br />
               <button
@@ -578,7 +578,7 @@ function Downloadcenter() {
                   setShowdatasheetsthree(false);
                 }}
               >
-                <BsDot size={"3rem"} /> Single Phase
+                <BsDot size={"3rem"} /> Single Phase Inverters
               </button>
               <br /> <br /> <br />
               <button
@@ -589,7 +589,7 @@ function Downloadcenter() {
                   setShowdatasheetsthree(true);
                 }}
               >
-                <BsDot size={"3rem"} /> Three Phase
+                <BsDot size={"3rem"} /> Three Phase Inverters
               </button>
             </motion.div>
           ) : (
@@ -615,7 +615,7 @@ function Downloadcenter() {
                   setShowcertificatesthree(false);
                 }}
               >
-                <BsDot size={"3rem"} /> certificates Hybrid
+                <BsDot size={"3rem"} />  Hybrid Inverters
               </button>
               <br /> <br /> <br />
               <button
@@ -626,7 +626,7 @@ function Downloadcenter() {
                   setShowcertificatesthree(false);
                 }}
               >
-                <BsDot size={"3rem"} /> certificates Single Phase
+                <BsDot size={"3rem"} />  Single Phase Inverters
               </button>
               <br /> <br /> <br />
               <button
@@ -637,7 +637,7 @@ function Downloadcenter() {
                   setShowcertificatesthree(true);
                 }}
               >
-                <BsDot size={"3rem"} /> certificates Three Phase
+                <BsDot size={"3rem"} />  Three Phase Inverters
               </button>
             </motion.div>
           ) : (
@@ -664,7 +664,7 @@ function Downloadcenter() {
                   setShowinstructionsthree(false);
                 }}
               >
-                <BsDot size={"3rem"} /> instructions Hybrid
+                <BsDot size={"3rem"} />  Hybrid Inverters
               </button>
               <br /> <br /> <br />
               <button
@@ -675,7 +675,7 @@ function Downloadcenter() {
                   setShowinstructionsthree(false);
                 }}
               >
-                <BsDot size={"3rem"} /> instructions Single Phase
+                <BsDot size={"3rem"} />  Single Phase Inverters
               </button>
               <br /> <br /> <br />
               <button
@@ -686,7 +686,7 @@ function Downloadcenter() {
                   setShowinstructionsthree(true);
                 }}
               >
-                <BsDot size={"3rem"} /> instructions Three Phase
+                <BsDot size={"3rem"} />  Three Phase Inverters
               </button>
             </motion.div>
           ) : (
@@ -1484,7 +1484,7 @@ function Downloadcenter() {
                 }}
               >
                 <BsDot size={"3rem"} />
-                certificates ASW 3 to 6kw
+                 ASW 3 to 6kw
               </button>
             </motion.div>
           ) : (
@@ -1546,7 +1546,7 @@ function Downloadcenter() {
                 }}
               >
                 <BsDot size={"3rem"} />
-                certificates ASW H2 3 to 6kw
+                 ASW H2 3 to 6kw
               </button>
               <button
                 className={
@@ -1593,7 +1593,7 @@ function Downloadcenter() {
                 }}
               >
                 <BsDot size={"3rem"} />
-                certificates ASW H2 3 to 6kw
+                 ASW H2 3 to 6kw
               </button>
             </motion.div>
           ) : (
@@ -1649,7 +1649,7 @@ function Downloadcenter() {
                 }}
               >
                 <BsDot size={"3rem"} />
-                certificates ASW S2 3 to 6kw
+                 ASW S2 3 to 6kw
               </button>
               <button
                 className={
@@ -1696,7 +1696,7 @@ function Downloadcenter() {
                 }}
               >
                 <BsDot size={"3rem"} />
-                certificates ASW S2 3 to 6kw
+                 ASW S2 3 to 6kw
               </button>
               <button
                 className={
@@ -1743,7 +1743,7 @@ function Downloadcenter() {
                 }}
               >
                 <BsDot size={"3rem"} />
-                certificates ASW S2 3 to 6kw
+                 ASW S2 3 to 6kw
               </button>
               <button
                 className={
@@ -1790,7 +1790,7 @@ function Downloadcenter() {
                 }}
               >
                 <BsDot size={"3rem"} />
-                certificates ASW S2 3 to 6kw
+                 ASW S2 3 to 6kw
               </button>
             </div>
           ) : (
@@ -1852,7 +1852,7 @@ function Downloadcenter() {
                 }}
               >
                 <BsDot size={"3rem"} />
-                instructions ASW 3 to 6kw
+                 ASW 3 to 6kw
               </button>
               <button
                 className={
@@ -1899,7 +1899,7 @@ function Downloadcenter() {
                 }}
               >
                 <BsDot size={"3rem"} />
-                instructions ASW 3 to 6kw
+                 ASW 3 to 6kw
               </button>
               <button
                 className={
@@ -1946,7 +1946,7 @@ function Downloadcenter() {
                 }}
               >
                 <BsDot size={"3rem"} />
-                instructions ASW 3 to 6kw
+                 ASW 3 to 6kw
               </button>
             </motion.div>
           ) : (
@@ -2008,7 +2008,7 @@ function Downloadcenter() {
                 }}
               >
                 <BsDot size={"3rem"} />
-                instructions ASW H2 3 to 6kw
+                 ASW H2 3 to 6kw
               </button>
               <button
                 className={
@@ -2055,7 +2055,7 @@ function Downloadcenter() {
                 }}
               >
                 <BsDot size={"3rem"} />
-                instructions ASW H2 3 to 6kw
+                 ASW H2 3 to 6kw
               </button>
               <button
                 className={
@@ -2102,7 +2102,7 @@ function Downloadcenter() {
                 }}
               >
                 <BsDot size={"3rem"} />
-                instructions ASW H2 3 to 6kw
+                 ASW H2 3 to 6kw
               </button>
             </motion.div>
           ) : (
@@ -2157,7 +2157,7 @@ function Downloadcenter() {
                   setShowinstructionsthreeDownload7(false);
                 }}
               >
-                <BsDot size={"3rem"} /> instructions ASW S2 3 to 6kw
+                <BsDot size={"3rem"} />  ASW S2 3 to 6kw
               </button>
               <button
                 className={
@@ -2203,7 +2203,7 @@ function Downloadcenter() {
                   setShowinstructionsthreeDownload7(false);
                 }}
               >
-                <BsDot size={"3rem"} /> instructions ASW S2 3 to 6kw
+                <BsDot size={"3rem"} />  ASW S2 3 to 6kw
               </button>
               <button
                 className={
@@ -2249,7 +2249,7 @@ function Downloadcenter() {
                   setShowinstructionsthreeDownload7(false);
                 }}
               >
-                <BsDot size={"3rem"} /> instructions ASW S2 3 to 6kw
+                <BsDot size={"3rem"} />  ASW S2 3 to 6kw
               </button>
               <button
                 className={
@@ -2295,7 +2295,7 @@ function Downloadcenter() {
                   setShowinstructionsthreeDownload7(false);
                 }}
               >
-                <BsDot size={"3rem"} /> instructions ASW S2 3 to 6kw
+                <BsDot size={"3rem"} />  ASW S2 3 to 6kw
               </button>
               <button
                 className={
@@ -2341,7 +2341,7 @@ function Downloadcenter() {
                   setShowinstructionsthreeDownload7(false);
                 }}
               >
-                <BsDot size={"3rem"} /> instructions ASW S2 3 to 6kw
+                <BsDot size={"3rem"} />  ASW S2 3 to 6kw
               </button>
               <button
                 className={
@@ -2387,7 +2387,7 @@ function Downloadcenter() {
                   setShowinstructionsthreeDownload7(false);
                 }}
               >
-                <BsDot size={"3rem"} /> instructions ASW S2 3 to 6kw
+                <BsDot size={"3rem"} />  ASW S2 3 to 6kw
               </button>
               <button
                 className={
@@ -2433,7 +2433,7 @@ function Downloadcenter() {
                   setShowinstructionsthreeDownload7(true);
                 }}
               >
-                <BsDot size={"3rem"} /> instructions ASW S2 3 to 6kw
+                <BsDot size={"3rem"} />  ASW S2 3 to 6kw
               </button>
             </div>
           ) : (
