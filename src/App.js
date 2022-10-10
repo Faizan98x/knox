@@ -6,7 +6,7 @@ import Products from "./components/Products";
 import InstallerArea from "./components/InstallerArea";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-// import Product1 from "./components/Product1";
+// import Product1 from "./components/Product1"; no use
 import { Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import Warrantycheck from "./components/Warrantycheck";
