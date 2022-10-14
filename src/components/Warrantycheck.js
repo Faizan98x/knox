@@ -34,9 +34,9 @@ function Warrantycheck() {
           value={searchID}
           onChange={(e) => setSearchID(e.target.value)}
         />
-        <button
+        <button  type="submit"
           style={{ textAlign: "center", marginBottom: "2rem" }}
-          onClick={() => handleSearch()}
+          onSubmit={() => handleSearch()}
           className="add"
         >
           Search

@@ -1,5 +1,12 @@
 import React from "react";
+import { motion } from "framer-motion";
+
+// contact style file link
+
 import "../Styles/Contact.css";
+
+// react icons
+
 import { MdLocationOn, MdEmail } from "react-icons/md";
 import {
   BsFillTelephoneFill,
@@ -7,7 +14,6 @@ import {
   BsTwitter,
 } from "react-icons/bs";
 import { RiLinkedinBoxFill, RiFacebookCircleFill } from "react-icons/ri";
-import { motion } from "framer-motion";
 
 function Contact() {
   return (
@@ -124,11 +130,11 @@ function Contact() {
       </div>
 
       {/* ******************** Section Three Starts from Here ******************** */}
-
+{/* 
+      <h1 className="offices-title">FACTORY</h1> */}
       <div className="section3">
-        <h1 className="offices-title">FACTORY</h1>
         <div className="section3-sub">
-          <h2 className="title-china">CHINA</h2>
+          <h2 className="title-china">FACTORY</h2>
 
           <div className="section3-sub-overlay">
             <ul className="section3-sub-text">
@@ -183,7 +189,62 @@ function Contact() {
             </ul>
           </div>
         </div>
+        <div className="section3-sub">
+          <h2 className="title-china">DUBAI OFFICE</h2>
+
+          <div className="section3-sub-overlay">
+            <ul className="section3-sub-text">
+              <li className="section3-sub-li">
+                <h4>DUBAI</h4>
+              </li>
+
+              <li className="section3-sub-li">
+                <MdLocationOn size="2.5rem" color="#F0A500" />
+                <span>
+                  <a
+                    style={{ color: "#fff", fontSize: "1.6rem" }}
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    href="https://goo.gl/maps/v8vwnSCak5D3Q4RQ8"
+                  >
+                    Lb02126, Jebel Ali Free Zone <br /> Dubai, United Arab Emirates
+                  </a>
+                </span>
+              </li>
+
+              <li className="section3-sub-li">
+                <BsFillTelephoneFill size="2.5rem" color="#F0A500" />
+                <span>
+                  <a
+                    style={{ color: "#fff", fontSize: "1.6rem" }}
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    href="tel:+92 304 111 Knox (5669)"
+                  >
+                    +92 304 111 Knox (5669)
+                  </a>
+                </span>
+              </li>
+
+              <li className="section3-sub-li">
+                <MdEmail size="2.5rem" color="#F0A500" />
+                <span>
+                  {" "}
+                  <a
+                    style={{ color: "#fff", fontSize: "1.6rem" }}
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    href="mailto:info@knoxpv.com"
+                  >
+                    info@knoxpv.com
+                  </a>
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
+
 
       {/* ******************** Section Four Starts from Here ******************** */}
 

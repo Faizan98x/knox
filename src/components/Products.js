@@ -1,6 +1,24 @@
 import React from "react";
+
+// product style file link
+
 import "../Styles/Products.css";
-import product1img from "../images/inverterasw.png";
+
+// product images links
+
+import inverterSinglePhase1to3kw from "../images/3.Products-page-images/Single-Phase-Inverter/single-phase-1to3kw-SS.png";
+import inverterSinglePhase3to5kw from "../images/3.Products-page-images/Single-Phase-Inverter/single-phase-3to5kw-S.png";
+import inverterSinglePhase3to6kw from "../images/3.Products-page-images/Single-Phase-Inverter/single-phase-3to6kw-S-G2.png";
+import inverterSinglePhase6to10kw from "../images/3.Products-page-images/Single-Phase-Inverter/single-phase-6to10kw-S.png";
+
+import inverterHybridSinglePhase3to6kw from "../images/3.Products-page-images/Hybrid/hybrid-single-phase-3to6kw-H-S2.png";
+import inverterHybridThreePhase8to12kw from "../images/3.Products-page-images/Hybrid/hybrid-three-phase-8to12kw-H-T1.png";
+
+import inverter30to50watt from "../images/3.Products-page-images/Three-Phase-Inverters/30to50-watt-blue-color-side-view.png";
+import inverterThreePhase1to20kW from "../images/ThreePhase1to20kW-removebg-preview.png";
+import inverterThreePhase30to50kW from "../images/ThreePhase30to50kW-removebg-preview.png";
+import inverterThreePhase80to110kW from "../images/ThreePhase80to110kW-removebg-preview.png";
+
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
@@ -13,89 +31,178 @@ function Products() {
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <h6>Single Phase Inverter</h6>
-      {/* first one */}
-      <motion.div id="test1" className="product-box product-single-phase">
-        <div className="product-single-phase-1">
+      {/* Single phase Inverters */}
+
+      <h5 id="test1">Single Phase Inverter</h5>
+
+      <div className="product-box">
+        {/* Single Phase Inverter First Product */}
+
+        <div className="product-box-subbox">
           <p>
-            ASW S Series <br /> 3 to 5 kW
+            ASW S-S Series <br /> 1 to 3 kW
           </p>
-          <img src={product1img} alt="inverter" width={"230px"} />
-          <Link to="/product1">
+          <Link to="/SSeries1to3kW">
+            <img
+              src={inverterSinglePhase1to3kw}
+              alt="inverter"
+              width={"230px"}
+            />
             <button className="btn">View Product</button>
           </Link>
         </div>
-        <div className="product-single-phase-2">
+
+        {/* Single Phase Inverter Second Product */}
+
+        <div className="product-box-subbox">
           <p>
             ASW S Series <br /> 3 to 5 kW
           </p>
-          <img src={product1img} alt="inverter" width={"230px"} />
-          <Link to="/product1">
+          <Link to="/SSeries3to5kW">
+            <img
+              src={inverterSinglePhase3to5kw}
+              alt="inverter"
+              width={"230px"}
+            />
             <button className="btn">View Product</button>
           </Link>
         </div>
-      </motion.div>
-      {/* second one */}
-      <h6>Three Phase Inverter</h6>
-      <div id="test2" className="product-box product-three-phase">
-        {" "}
-        <div className="product-single-phase-1">
+
+        {/* Single Phase Inverter Third Product */}
+
+        <div className="product-box-subbox">
           <p>
-            ASW S Series <br /> 3 to 5 kW
+            ASW S G2 Series <br /> 3 to 6 kW
           </p>
-          <img src={product1img} alt="inverter" width={"230px"} />
-          <Link to="/product1">
+          <Link to="/SG2Series3to6kW">
+            <img
+              src={inverterSinglePhase3to6kw}
+              alt="inverter"
+              width={"230px"}
+            />
             <button className="btn">View Product</button>
           </Link>
         </div>
-        <div className="product-single-phase-2">
+
+        {/* Single Phase Inverter Fourth Product */}
+
+        <div className="product-box-subbox">
           <p>
-            ASW S Series <br /> 3 to 5 kW
+            ASW S Series <br /> 6 to 10 kW
           </p>
-          <img src={product1img} alt="inverter" width={"230px"} />
-          <Link to="/product1">
-            <button className="btn">View Product</button>
-          </Link>
-        </div>
-        <div className="product-single-phase-1">
-          <p>
-            ASW S Series <br /> 3 to 5 kW
-          </p>
-          <img src={product1img} alt="inverter" width={"230px"} />
-          <Link to="/product1">
-            <button className="btn">View Product</button>
-          </Link>
-        </div>
-        <div className="product-single-phase-2">
-          <p>
-            ASW S Series <br /> 3 to 5 kW
-          </p>
-          <img src={product1img} alt="inverter" width={"230px"} />
-          <Link to="/product1">
-            <button className="btn">View Product</button>
-          </Link>
-        </div>
-        <div className="product-single-phase-1">
-          <p>
-            ASW S Series <br /> 3 to 5 kW
-          </p>
-          <img src={product1img} alt="inverter" width={"230px"} />
-          <Link to="/product1">
+          <Link to="/SSeries6to10kW">
+            <img
+              src={inverterSinglePhase6to10kw}
+              alt="inverter"
+              width={"230px"}
+            />
             <button className="btn">View Product</button>
           </Link>
         </div>
       </div>
-      {/* third one */}
-      <div id="test3">
-        <h6>Hybrid Inverter</h6>
-        <div className="product-box product-hybrid">
-          <div className="product-single-phase-1">
-            <p>
-              ASW H-S2 Series <br /> 3 to 6 kW
-            </p>
-            <img src={product1img} alt="inverter" width={"230px"} />
-            <button className="btn">Coming Soon</button>
-          </div>
+
+      {/* Three Phase Inverter */}
+
+      <h5 id="test2">Three Phase Inverter</h5>
+
+      <div className="product-box">
+        {/* Three Phase Inverter First Product */}
+
+        <div className="product-box-subbox">
+          <p>
+            G2 Series <br /> 3 to 5 kW
+          </p>
+          <Link to="/G2Series3to5kW">
+            <img src={inverterThreePhase1to20kW} alt="inverter" width={"230px"} />
+            <button className="btn">View Product</button>
+          </Link>
+        </div>
+
+        {/* Three Phase Inverter Second Product */}
+
+        <div className="product-box-subbox">
+          <p>
+            G2 Series <br /> 5 to 20 kW
+          </p>
+          <Link to="/G2Series5to20kW">
+            <img src={inverterThreePhase1to20kW} alt="inverter" width={"230px"} />
+            <button className="btn">View Product</button>
+          </Link>
+        </div>
+
+        {/* Three Phase Inverter Third Product */}
+
+        <div className="product-box-subbox">
+          <p>
+            G2 Series <br /> 30 to 50 kW
+          </p>
+          <Link to="/G2Series30to50kW">
+            <img src={inverterThreePhase30to50kW} alt="inverter" width={"230px"} />
+            <button className="btn">View Product</button>
+          </Link>
+        </div>
+
+        {/* Three Phase Inverter Fourth Product */}
+
+        <div className="product-box-subbox">
+          <p>
+            G2 Series <br /> 80 to 110 kW
+          </p>
+          <Link to="/G2Series80to110kW">
+            <img src={inverterThreePhase80to110kW} alt="inverter" width={"230px"} />
+            <button className="btn">View Product</button>
+          </Link>
+        </div>
+
+        {/* Three Phase Inverter Fifth Product */}
+
+        <div className="product-box-subbox">
+          <p>
+            G3 Series <br /> 10 to 40 kW
+          </p>
+          <Link to="/G3Series10to40kW">
+            <img src={inverter30to50watt} alt="inverter" width={"230px"} />
+            <button className="btn">View Product</button>
+          </Link>
+        </div>
+      </div>
+
+      {/* Hybrid Inveters */}
+
+      <h5 id="test3">Hybrid Inverter</h5>
+
+      <div className="product-box">
+        {/* Hybrid Single Phase Inverter */}
+
+        <div className="product-box-subbox">
+          <p>
+            ASW H-S2 Series <br />
+            SINGLE PHASE <br /> 3 to 6 kW
+          </p>
+          <Link to="/HybridSinglePhase">
+            <img
+              src={inverterHybridSinglePhase3to6kw}
+              alt="inverter"
+              width={"230px"}
+            />
+            <button className="btn">View Product</button>
+          </Link>
+        </div>
+
+        {/* Hybrid Three Phase Inverter */}
+
+        <div className="product-box-subbox">
+          <p>
+            ASW H-T1 Series <br /> THREE PHASE <br /> 8 to 12 kW
+          </p>
+          <Link to="/HybridThreePhase">
+            <img
+              src={inverterHybridThreePhase8to12kw}
+              alt="inverter"
+              width={"230px"}
+            />
+            <button className="btn">View Product</button>
+          </Link>
         </div>
       </div>
     </motion.div>

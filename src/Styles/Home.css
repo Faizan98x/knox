@@ -7,7 +7,7 @@
   min-height: 100vh;
   max-width: 100%;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../images/product2.jpg");
+    url("../images/1.Home-page-images/home-front-image.jpg");
   background-position: center;
   background-size: cover;
   position: relative;
@@ -72,6 +72,10 @@
   line-height: 1.8;
 }
 
+.home-sec2-part2 li a {
+  text-align: center;
+}
+
 .home-sec2-part2 li:hover {
   transform: scale(1.1);
 }
@@ -99,7 +103,7 @@
 
 .home-sec3 {
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url("../images/installation.jpg");
+    url("../images/1.Home-page-images/installation.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -108,7 +112,7 @@
 
 .home-sec5 {
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url("../images/bestinverter.jpg");
+    url("../images/1.Home-page-images/bestinverter.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -203,7 +207,7 @@
 /* Home Section Six Starts from here */
 
 .home-sec6 {
-  padding: clamp(2rem, 3.5vw, 5rem);
+  padding: clamp(3rem, 3.5vw, 5rem);
 }
 
 .home-sec6 h5 {
